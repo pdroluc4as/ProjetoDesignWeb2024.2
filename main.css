@@ -4,6 +4,12 @@
     margin: 0;
 }
 
+body{
+    background-image: url(imgs/Backgrounds/back.png);
+    background-repeat: repeat;
+}
+
+
 
 .carousel-item img {
     width: 800px; 
@@ -18,12 +24,16 @@ header{
     display: flex;
 }
 
-/* v CSS PARA A PARTE DOS MAIS VENDIDOS v */
+
+
+/* CSS PARA A PARTE DOS MAIS VENDIDOS v */
 .mais-vendidos{
     margin: 0 auto;
     text-align: center;
     display: flex;
 }
+
+
 
 /* ANIMAÇÃO FLIP */
 .flip-container {
@@ -143,5 +153,78 @@ header{
     margin-top: 10%;
     font-size: 0;
 }
-/* ANIMAÇÃO FLIP */
-/* ^ CSS PARA A PARTE DOS MAIS VENDIDOS ^ */
+
+
+
+/* CSS DA PARTE DO SUBMENU COM OS DOCES */
+#categoria{
+    background-color: #3F0106;
+    padding: 3em;
+    text-align: center;
+    color: #D9B992;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+} 
+ul{
+    padding: 0; 
+    text-align: center;
+}
+li{
+    display: inline;
+}
+a{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 1.76em;
+    color: #D9B992;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+a:hover{
+    margin-bottom: 0;
+}
+
+
+
+/* CSS DA PARTE DO MENU*/
+header{
+    background-color: #3F0106;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0.5em;
+}
+nav{
+    text-align: center;
+    color: #D9B992;
+    text-decoration: none;
+} 
+ul{
+    padding: 0; 
+    text-align: center;
+}
+li{
+    display: inline;
+}
+header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #D9B992;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+h2{
+    font-size: 2.8em;
+}
+a:hover{
+    margin-bottom: 0;
+}
+
+/* CSS DA PARTE DOS MAIS VENDIDOS COM OS DOCES */
+.mais-vendidos{
+    background-image: url(imgs/Backgrounds/Group\ 2.png)
+    /* bem bugadinho graças a Deus */
+}

@@ -4,11 +4,23 @@
     margin: 0;
 }
 
+body{
+    background-image: url(imgs/Backgrounds/back.png);
+    background-size: 20%;
+    background-repeat: repeat;
+}
 
 .carousel-item img {
     width: 800px; 
     height: 400px; 
     object-fit: cover; /* serve pra ajeitar a resolução da imagem */
+}
+.carousel-caption {
+    margin: 7.5%;
+}
+.carousel-caption h5{
+    font-size: 3em;
+    color: #D9B992;
 }
 
 header{
@@ -18,12 +30,38 @@ header{
     display: flex;
 }
 
-/* v CSS PARA A PARTE DOS MAIS VENDIDOS v */
+
+
+/* CSS PARA A PARTE DOS MAIS VENDIDOS v */
 .mais-vendidos{
     margin: 0 auto;
     text-align: center;
+    /* Raica: aqui me fudeo, como q eu arrumo esse texto? */
+    background-image: url(imgs/Backgrounds/background-MaisVendidos.png);
+    /* Raica: bem bugadinho graças a Deus */
+    padding-top: 5%;
+    padding-bottom: 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.cards-conteiner{
+    /* Raica: assim, aparentemente, mas sinto q dava pra fazer sem essa div, só nn sei como */
     display: flex;
 }
+
+.mais-vendidos a{
+    padding-inline: 0;
+    padding-block: 0.3em;
+    border: 1px solid #3F0106;
+    color: #3F0106;
+}
+.mais-vendidos h2{
+    color: #D9B992;
+    padding: 2em;
+}
+
 
 /* ANIMAÇÃO FLIP */
 .flip-container {
@@ -91,6 +129,9 @@ header{
     bottom: 60%;
     width: 165px;
     height: 165px;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
     border-radius: 50%;
     border: solid 3px #D9B992;
 }
@@ -101,6 +142,9 @@ header{
     bottom: 60%;
     width: 165px;
     height: 165px;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
     border-radius: 50%;
     border: solid 3px #3F0106;
     background-color: #3F0106;
@@ -112,6 +156,9 @@ header{
     bottom: 60%;
     width: 165px;
     height: 165px;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
     border-radius: 50%;
     border: solid 3px #3F0106;
     opacity: 0;
@@ -122,10 +169,13 @@ header{
     left: 60%;
     top: 80%;
     text-decoration: none;
-    color: white;
+    color: #3F0106;
     background-color: #D9B992;
     width: 123px;
     height: 55px;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
     border-radius: 10px;
     margin-top: 10%;
     font-size: 25px;
@@ -139,9 +189,111 @@ header{
     background-color: #3F0106;
     width: 123px;
     height: 55px;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
     border-radius: 10px;
     margin-top: 10%;
     font-size: 0;
 }
-/* ANIMAÇÃO FLIP */
-/* ^ CSS PARA A PARTE DOS MAIS VENDIDOS ^ */
+
+
+
+/* CSS DA PARTE DO SUBMENU COM OS DOCES */
+#categoria{
+    background-color: #3F0106;
+    padding: 3em;
+    text-align: center;
+    color: #D9B992;
+    text-decoration: none;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+} 
+ul{
+    padding: 0; 
+    text-align: center;
+}
+li{
+    display: inline;
+}
+#categoria a{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 1.76em;
+    color: #D9B992;
+    margin: auto;
+    border: 1px solid #3F0106;
+    border-radius: 10px;
+    height: 100%;
+    width: 200px;
+    align-self: flex-start;
+}
+#categoria a:hover{
+    margin: auto 0;
+    height: 100%;
+    width: 200px;
+    border: 1px solid #D9B992;
+    border-radius: 10px;
+}
+
+
+/* CSS DA PARTE DO MENU*/
+header{
+    background-color: #3F0106;
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    align-content: center;
+    padding: 0.8em;
+}
+nav{
+    text-align: center;
+    color: #D9B992;
+    text-decoration: none;
+    margin: auto 0;
+} 
+ul{
+    padding: 0; 
+    text-align: center;
+    margin: 0 auto;
+}
+li{
+    display: inline;
+    margin: auto 0;
+}
+header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #D9B992;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header nav li a{
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    background-color: #3F0106;
+    border: 1px solid #3F0106;
+    color: #D9B992;
+    border-radius: 10px;
+}
+nav h2{
+    margin: 0 auto;
+    margin: 0 auto;
+    font-size: 2.8em;
+    margin-bottom: 0;
+}
+nav li > a:hover{
+    margin: auto;
+    background-color: #D9B992;
+    border: 1px solid #D9B992;
+    color: #3F0106;
+    border-radius: 10px;
+}
+h1{
+    width: 167.792px;
+}

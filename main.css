@@ -22,10 +22,6 @@ body{
     font-size: 3em;
     color: #D9B992;
 }
-
-header{
-    display: flex;
-}
 #categoria{
     display: flex;
 }
@@ -240,6 +236,7 @@ header{
     padding: 0.5em;
 }
 nav{
+    
     text-align: center;
     color: #D9B992;
     text-decoration: none;

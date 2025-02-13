@@ -203,6 +203,8 @@ body{
     color: #D9B992;
     text-decoration: none;
     display: flex;
+    align-items: stretch;
+    align-content: stretch;
     justify-content: center;
 } 
 ul{
@@ -212,19 +214,26 @@ ul{
 li{
     display: inline;
 }
-a{
+#categoria a{
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
     font-size: 1.76em;
     color: #D9B992;
-    margin-bottom: 2px;
+    margin: auto;
+    border: 1px solid #3F0106;
+    border-radius: 10px;
+    height: 100%;
+    width: 200px;
+    align-self: flex-start;
+}
+#categoria a:hover{
+    margin: auto 0;
+    height: 100%;
+    width: 200px;
+    border: 1px solid #D9B992;
     border-radius: 10px;
 }
-a:hover{
-    margin-bottom: 0;
-}
-
 
 
 /* CSS DA PARTE DO MENU*/
@@ -233,33 +242,55 @@ header{
     display: flex;
     justify-content:space-between;
     align-items: baseline;
-    padding: 0.5em;
+    align-content: center;
+    padding: 0.8em;
 }
 nav{
     
     text-align: center;
     color: #D9B992;
     text-decoration: none;
+    margin: auto 0;
 } 
 ul{
     padding: 0; 
     text-align: center;
+    margin: 0 auto;
 }
 li{
     display: inline;
+    margin: auto 0;
 }
 header a{
     display: inline-block;
     text-decoration: none;
     font-size: 0.6em;
     color: #D9B992;
-    margin-bottom: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header nav li a{
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    background-color: #3F0106;
+    border: 1px solid #3F0106;
+    color: #D9B992;
     border-radius: 10px;
 }
-h2{
+nav h2{
+    margin: 0 auto;
+    margin: 0 auto;
     font-size: 2.8em;
-}
-a:hover{
     margin-bottom: 0;
 }
-
+nav li > a:hover{
+    margin: auto;
+    background-color: #D9B992;
+    border: 1px solid #D9B992;
+    color: #3F0106;
+    border-radius: 10px;
+}
+h1{
+    width: 167.792px;
+}

@@ -1,0 +1,151 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(imgs/Backgrounds/back.png);
+    background-size: 20%;
+    background-repeat: repeat;
+}
+
+main{
+    background-image: url(imgs/Backgrounds/back-comentario.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+}
+
+/* CSS DA PARTE DO MENU*/
+header{
+    background-color: #3F0106;
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    align-content: center;
+    padding: 0.8em;
+}
+nav{
+    text-align: center;
+    color: #D9B992;
+    text-decoration: none;
+    margin: auto 0;
+} 
+ul{
+    padding: 0; 
+    text-align: center;
+    margin: 0 auto;
+}
+li{
+    display: inline;
+    margin: 0 auto;
+}
+header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #D9B992;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header nav li a{
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    background-color: #3F0106;
+    border: 1px solid #3F0106;
+    color: #D9B992;
+    border-radius: 10px;
+}
+nav h2{
+    margin: 0 auto;
+    margin: 0 auto;
+    font-size: 2.8em;
+    margin-bottom: 0;
+}
+nav li > a:hover{
+    margin: auto;
+    background-color: #D9B992;
+    border: 1px solid #D9B992;
+    color: #3F0106;
+    border-radius: 10px;
+}
+h1{
+    width: 167.792px;
+}
+
+/* CSS dos comentários */
+img{
+    text-align: center;
+    margin: auto 0;
+}
+main > a > img{
+    text-align: center;
+    margin: auto;
+}
+main > a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-inline: auto;
+    margin: 3em;
+}
+main a{
+    text-align: center;
+    text-decoration: none;
+}
+main h2{
+    text-align: center;
+    color: #82451F;
+}
+.Mariane-Claire{
+    background-color: #3F0106;
+    width: 50%;
+    color: #D9B992;
+    border-radius: 530px 510px 510px 530px;
+}
+.Thierry-Augusto{
+    width: 50%;
+    background-color: #3E200E;
+    color: #D9B992;
+    border-radius: 530px 510px 510px 530px;
+    text-align: right;
+}
+.Naomi-Isabela{
+    width: 50%;
+    background-color: #3F0106;
+    color: #D9B992;
+    border-radius: 530px 510px 510px 530px;
+}
+.Sebastian-Raphael{
+    width: 50%;
+    background-color: #3E200E;
+    color: #D9B992;
+    border-radius: 530px 510px 510px 530px;
+    text-align: right;
+}
+.Eloidie-Fernanda{
+    width: 50%;
+    background-color: #3F0106;
+    color: #D9B992;
+    border-radius: 530px 510px 510px 530px;
+}
+.container-comentario{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    margin: 2em auto;
+}
+.comentario{
+    margin: auto auto;
+    width: 68%;
+    font-size: 1.5em;
+}
+.comentario h3{
+    text-align: center;
+}

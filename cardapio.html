@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cardapio.css">
+    <script src="https://kit.fontawesome.com/eb5472cd53.js" crossorigin="anonymous"></script>
     <title>Cardápio</title>
 </head>
 <body>
@@ -34,12 +35,252 @@
         </nav>
         <div class="menu-de-icones">
             <ul>
-                <li><a href="localizacao.html"><img src="imgs/icones/icone-locais.png" alt="icone de carrinho de compras"></a></li>
-                <li><a href="login.html"><img src="imgs/icones/usuario.png"></a></li>
-                <li><a href="carrinho1.html"><img src="imgs/icones/icone-carrinho-de-compras.png" alt="icone de carrinho de compras"></a></li>
+                <li>
+                    <a href="localizacao.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </li>
+                <li class="imagem-user">
+                    <a href="login.html">
+                        <img class= "user" src="imgs/icones/usuario.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
             </ul>
             <!-- Raica: mudar esse href qnd puder -->
         </div>
     </header>
+    <main>
+        <form action=""></form>
+
+        <section id="tortas">
+
+            <h3>Tortas</h3>
+            <div class="container tortas">
+                <div class="card tortas">
+                    <img src="imgs/comidas/Torta-de-Chocolate-Derretido.png" alt="">
+                    <p>
+                        <b>Torta de Chocolate Derretido</b>
+                        <br>
+                        <i>Feita com ovos e cacau em pó, café e pedaços de doces.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            <b>R$ 199,99</b>
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card tortas">
+                    <img src="imgs/comidas/Torta-de-Chocolate-Amargo.png"  alt="">
+                    <p>
+                        <b>Torta de Chocolate Amargo</b>
+                        <br>
+                        <i>Redemoinhos de chantilly com sabor de café expresso.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 169,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card tortas">
+                    <img src="imgs/comidas/Torta-Banoffee.png" alt="">
+                    <p>
+                        <b>Torta Banoffee</b>
+                        <br>
+                        <i>feita com massa sablée de amêndoas, recheio cremoso de caramelo e banana.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 179,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chocolates">
+            <h3>Chocolates</h3>
+            <div class="container chocolates">
+                <div class="card chocolates">
+                    <img src="imgs/comidas/Brownie-com-Sorvete.png"  alt="">
+                    <p>
+                        <b>Brownie com Sorvete</b>
+                        <br>
+                        <i>Sorvete de baunilha e calda de chocolate 80% cacau.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 67,00
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card chocolates">
+                    <img src="imgs/comidas/Cookies-de-Chocolate.png"  alt="">
+                    <p>
+                        <b>Cookies de Chocolate</b>
+                        <br>
+                        <i>Cacau em pó, açucar de cana e flor de sal.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 37,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card chocolates">
+                    <img src="imgs/comidas/Bundts-de-Chocolate-Amargo.png"  alt="">
+                    <p>
+                        <b>Bundts de Chocolate Amargo</b>
+                        <br>
+                        <i>são infundidos com delicadas notas de tangerina e alecrim</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 68,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frutados">
+            <h3>Frudados</h3>
+            <div class="container frutados">
+                <div class="card frutados">
+                    <img src="imgs/comidas/Cheesecake-de-Floresta-Negra.png"  alt="">
+                    <p>
+                        <b>Cheesecake de Floresta Negra</b>
+                        <br>
+                        <i>Recheio de creamcheese e Cerejas</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 369,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card frutados">
+                    <img src="imgs/comidas/Tartelettes-de-Framboesa.png"  alt="">
+                    <p>
+                        <b>Tartelettes de Framboesa</b>
+                        <br>
+                        <i>base amanteigada, recheio de creme pâtissier e framboesas.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 59,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card frutados">
+                    <img src="imgs/comidas/Bolinhas-de-Coco-e-Limão.png"  alt="">
+                    <p>
+                        <b>Bolinhas de Coco e Limão</b>
+                        <br>
+                        <i>Um toque cítrico de limão textura delicada e um sabor equilibrado.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 69,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gelatos">
+            <h3>Gelatos</h3>
+            <div class="container gelatos">
+                <div class="card gelatos">
+                    <img src="imgs/comidas/Sorvete-de-Chocolate-Belga.png"  alt="">
+                    <p>
+                        <b>Sorvete de Chocolate Belga</b>
+                        <br>
+                        <i>Textura cremosa e um sabor intenso.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 59,99 
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card gelatos">
+                    <img src="imgs/comidas/Casquinha-de-Sorvete.png"  alt="">
+                    <p>
+                        <b>Casquinha de Sorvete</b>
+                        <br>
+                        <i>Sorvete de pistache com cobertura de chocolate</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 40,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="card gelatos">
+                    <img src="imgs/comidas/Sorvete-com-biscoito-de-mascarpone.png"  alt="">
+                    <p>
+                        <b>Sorvete com biscoito de mascarpone</b>
+                        <br>
+                        <i>mascarpone com pedaços macios de biscoito.</i>
+                    </p>
+                    <div class="carrinho-de-compras">
+                        <p class="preco">
+                            R$ 90,99
+                        </p>
+                        <a href="carrinho1.html">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -22,9 +22,15 @@ body{
     font-size: 3em;
     color: #D9B992;
 }
+
+header{
+    display: flex;
+}
 #categoria{
     display: flex;
 }
+
+
 
 /* CSS PARA A PARTE DOS MAIS VENDIDOS v */
 .mais-vendidos{
@@ -121,8 +127,8 @@ body{
     position: absolute;
     left: 50%;
     bottom: 60%;
-    width: 165px;
-    height: 165px;
+    width: 60%;
+    height: 45%;
     /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
     mas o card nn, fora q a página principal tem q ser responsiva */
     /* em resumo, ajeitar erra porra */
@@ -134,8 +140,8 @@ body{
     position: absolute;
     right: 50%;
     bottom: 60%;
-    width: 165px;
-    height: 165px;
+    width: 60%;
+    height: 45%;
     /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
     mas o card nn, fora q a página principal tem q ser responsiva */
     /* em resumo, ajeitar erra porra */
@@ -148,14 +154,15 @@ body{
     position: absolute;
     right: 50%;
     bottom: 60%;
-    width: 165px;
-    height: 165px;
+    width: 60%;
+    height: 45%;
     /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
     mas o card nn, fora q a página principal tem q ser responsiva */
     /* em resumo, ajeitar erra porra */
     border-radius: 50%;
     border: solid 3px #3F0106;
     opacity: 0;
+    z-index: 0;
 }
 
 .flipper .frente a {
@@ -165,8 +172,8 @@ body{
     text-decoration: none;
     color: #3F0106;
     background-color: #D9B992;
-    width: 123px;
-    height: 55px;
+    width: 45%;
+    height: 15%;
     /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
     mas o card nn, fora q a página principal tem q ser responsiva */
     /* em resumo, ajeitar erra porra */
@@ -181,14 +188,22 @@ body{
     top: 80%;
     text-decoration: none;
     background-color: #3F0106;
-    width: 123px;
-    height: 55px;
+    width: 45%;
+    height: 15%;
     /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
     mas o card nn, fora q a página principal tem q ser responsiva */
     /* em resumo, ajeitar erra porra */
     border-radius: 10px;
     margin-top: 10%;
     font-size: 0;
+    z-index: 0;
+    outline: none;
+    content: "";
+    overflow: hidden;
+}
+.flipper .tras p{
+    position: absolute;
+    z-index: 1;
 }
 
 
@@ -201,36 +216,36 @@ body{
     color: #D9B992;
     text-decoration: none;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     align-content: stretch;
     justify-content: center;
 } 
-ul{
-    padding: 0; 
-    text-align: center;
-}
-li{
-    display: inline;
-}
-#categoria a{
+#categoria div{
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
     font-size: 1.76em;
     color: #D9B992;
-    margin: auto;
+    margin: auto 0;
     border: 1px solid #3F0106;
     border-radius: 10px;
-    height: 100%;
+    height: 200px;
     width: 200px;
-    align-self: flex-start;
+    vertical-align: bottom;
 }
-#categoria a:hover{
+#categoria div:hover{
     margin: auto 0;
-    height: 100%;
+    height: 200px;
     width: 200px;
     border: 1px solid #D9B992;
     border-radius: 10px;
+}
+.imagem-categoria{
+    height: 30px;
+}
+#categoria a{
+    text-decoration: none;
+    color: #D9B992;
 }
 
 
@@ -243,19 +258,29 @@ header{
     align-content: center;
     padding: 0.8em;
 }
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-de-icones ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 nav{
-    
     text-align: center;
     color: #D9B992;
     text-decoration: none;
     margin: auto 0;
 } 
-ul{
+header ul{
     padding: 0; 
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
 }
-li{
+header li{
     display: inline;
     margin: auto 0;
 }
@@ -291,6 +316,35 @@ nav li > a:hover{
 }
 h1{
     width: 167.792px;
+}
+.fa-solid{
+    font-size: 4.5em;
+    margin: 0.5em;
+}
+.fa-solid:hover{
+    color: white;
+}
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    border: 3px solid #3F0106;
+    border-radius: 100%;
+}
+.user:hover{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.menu-de-icones a{
+    vertical-align: middle;
+}
+.menu-de-icones li{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
 }
 
 /* parte das frutas */

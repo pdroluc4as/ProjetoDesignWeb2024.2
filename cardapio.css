@@ -184,3 +184,13 @@ main img{
     margin-top: 3em;
     vertical-align: bottom;
 }
+div.descricao{
+    height: 90px;
+}
+h4{
+    font-size: 26px;
+    color: #D9B992;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 42px;
+}

@@ -243,9 +243,20 @@ header{
 .imagem-categoria{
     height: 30px;
 }
-#categoria a{
+#categoria div > a{
     text-decoration: none;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
     color: #D9B992;
+}
+#categoria img{
+    vertical-align: middle;
+}
+#categoria p > a{
+    color: #D9B992;
+    text-decoration: none;
 }
 
 

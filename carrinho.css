@@ -1,6 +1,202 @@
-div.container{
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-image: url(imgs/Backgrounds/back.png);
+    background-size: 20%;
+    background-repeat: repeat;
+}
+
+header{
     display: flex;
 }
-form{
+
+/* CSS DA PARTE DO MENU*/
+header{
+    background-color: #3F0106;
     display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    align-content: center;
+    padding: 0.8em;
+}
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-de-icones ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    text-align: center;
+    color: #D9B992;
+    text-decoration: none;
+    margin: auto 0;
+} 
+header ul{
+    padding: 0; 
+    text-align: left;
+    margin: 0 auto;
+}
+header li{
+    display: inline;
+    margin: auto 0;
+}
+header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #D9B992;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header nav li a{
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    background-color: #3F0106;
+    border: 1px solid #3F0106;
+    color: #D9B992;
+    border-radius: 10px;
+}
+nav h2{
+    margin: 0 auto;
+    margin: 0 auto;
+    font-size: 2.8em;
+    margin-bottom: 0;
+}
+nav li > a:hover{
+    margin: auto;
+    background-color: #D9B992;
+    border: 1px solid #D9B992;
+    color: #3F0106;
+    border-radius: 10px;
+}
+h1{
+    width: 167.792px;
+}
+.fa-solid{
+    font-size: 4.5em;
+    margin: 0.5em;
+}
+ul .fa-solid:hover{
+    color: white;
+}
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    border: 3px solid #3F0106;
+    border-radius: 100%;
+}
+.user:hover{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.menu-de-icones a{
+    vertical-align: middle;
+}
+.menu-de-icones li{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
+}
+
+/* MODELANDO AS OPÇÕES */
+div.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.opcao button{
+    background-color: #3F0106;
+    color: #D9B992;
+    padding: 1em;
+    width: 300px;
+    border-radius: 18px;
+    border: none;
+    font-size: 1.1em;
+    margin: 1em;
+}
+.endereco{
+    background-color: #320105;
+    padding: 1em;
+    
+}
+.opcao-1{
+    display: flex;
+    flex-direction: column;
+}
+div.endereco input{
+    background-color: #D9B992;
+    border: none;
+    font-size: 1em;
+    padding: 0.4em;
+    width: 300px;
+    border-radius: 20px;
+    margin: 0.5em;
+    color: #320105;
+}
+div.endereco input::placeholder{
+    color: #320105;
+}
+div.endereco{
+    color: #D9B992;
+}
+p{
+    background-color: #82451F;
+    border:1px solid #D9B992;
+    border-radius: 150px;
+    font-size: 1.2em;
+    padding: 0.3em;
+}
+form > button{
+    background-color: #82451F;
+    padding: 0.8em;
+    width: 300px;
+    margin-top: 2em;
+    font-size: 1.3em;
+    border-radius: 18px;
+    border: none;
+    color: #D9B992;
+}
+form > input{
+    background-color: #320105;
+    color: #D9B992;
+    padding: 1em;
+    border: none;
+    border-radius: 18px;
+    width: 650px;
+    margin-top: 10px;
+}
+form > input::placeholder{
+    color: #D9B992;
+    text-align: center;
+    font-size: 1.3em;
+}
+form{
+    text-align: center;
+    margin: 2em auto;
+    width: 40%;
+}
+h1{
+    margin: 1em auto;
+}
+div.opcao{
+    margin: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+figure{
+    margin: 0 auto;
+    text-align: center;
 }

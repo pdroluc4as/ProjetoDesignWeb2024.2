@@ -29,20 +29,31 @@ header{
     align-content: center;
     padding: 0.8em;
 }
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-de-icones ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 nav{
     text-align: center;
     color: #D9B992;
     text-decoration: none;
     margin: auto 0;
 } 
-ul{
+header ul{
     padding: 0; 
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
 }
-li{
+header li{
     display: inline;
-    margin: 0 auto;
+    margin: auto 0;
 }
 header a{
     display: inline-block;
@@ -76,6 +87,35 @@ nav li > a:hover{
 }
 h1{
     width: 167.792px;
+}
+.fa-solid{
+    font-size: 4.5em;
+    margin: 0.5em;
+}
+.fa-solid:hover{
+    color: white;
+}
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    border: 3px solid #3F0106;
+    border-radius: 100%;
+}
+.user:hover{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.menu-de-icones a{
+    vertical-align: middle;
+}
+.menu-de-icones li{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
 }
 
 /* CSS dos comentários */

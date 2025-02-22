@@ -9,12 +9,6 @@ body{
     background-repeat: repeat;
 }
 
-main{
-    background-image: url(imgs/Backgrounds/back-comentario.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
 header{
     display: flex;
 }
@@ -28,20 +22,31 @@ header{
     align-content: center;
     padding: 0.8em;
 }
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-de-icones ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 nav{
     text-align: center;
     color: #D9B992;
     text-decoration: none;
     margin: auto 0;
 } 
-ul{
+header ul{
     padding: 0; 
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
 }
-li{
+header li{
     display: inline;
-    margin: 0 auto;
+    margin: auto 0;
 }
 header a{
     display: inline-block;
@@ -75,4 +80,117 @@ nav li > a:hover{
 }
 h1{
     width: 167.792px;
+}
+.fa-solid{
+    font-size: 4.5em;
+    margin: 0.5em;
+}
+ul .fa-solid:hover{
+    color: white;
+}
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    border: 3px solid #3F0106;
+    border-radius: 100%;
+}
+.user:hover{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.menu-de-icones a{
+    vertical-align: middle;
+}
+.menu-de-icones li{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
+}
+
+/* MODELANDO OS CARDS */
+main .container{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    vertical-align: bottom;
+    align-items: stretch;
+}
+main section{
+    margin-top: 5em;
+}
+main .card{
+    background-color: #3F0106;
+    text-align: center;
+    margin: 1em;
+    border-radius: 35px;
+    width: 24%;
+    min-height: 55%;
+}
+main .carrinho-de-compras{
+    margin-top: auto; /* Empurra para a parte inferior do card */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main h3{
+    font-size: 4em;
+    color: #3F0106;
+    margin-left: 3em;
+}
+main p{
+    color: #D9B992;
+    width: 364px;
+    font-size: 24px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+main .carrinho-de-compras a{
+    color:#D9B992;
+}
+main .preco{
+    background-color: #250101;
+    border: 1px solid #D9B992;
+    vertical-align: middle;
+    border-radius: 100px;
+    text-align: right;
+    padding: 0.5em;
+    margin: 1em;
+    vertical-align: bottom;
+}
+main .preco b{
+    text-align: left;
+}
+main i{
+    font-size: 20px;
+}
+main b{
+    font-size: 24px;
+}
+main a{
+    font-size: 0.6em;
+}
+main a:hover{
+    color: #250101;
+    background-color: #D9B992;
+    border-radius: 90%;
+}
+main img{
+    margin-top: 3em;
+    vertical-align: bottom;
+}
+div.descricao{
+    height: 90px;
+}
+h4{
+    font-size: 26px;
+    color: #D9B992;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 42px;
 }

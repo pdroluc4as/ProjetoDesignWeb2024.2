@@ -394,17 +394,6 @@ body {
     transform: rotate(315deg); 
 }
 
-.pizza-container {
-    position: absolute;
-    top: 3%;
-    left: -50%;
-    width: 100%;
-    height: 100%;
-    transform: scale(1.1);
-    z-index: 0;
-    
-}
-
 /* isso daqui tem que ficar depois dos slices por algum motivo que eu não sei */
 .slice {
     position: absolute;
@@ -417,74 +406,80 @@ body {
     border: 3px solid black;
     border-radius: 50%;
 }
+
+.pizza-container {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    transform: scale(0.8);
+}
+
+.fruits {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    /*padding-left: 20%;*/
+}
 .container-fruits {
     position: relative;
-    height: 450px;
-    width: 95%;
-    margin-bottom: 10%;
-    /*margin-left: 10%;*/
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
     border: 3px solid black;
-    border-top-right-radius: 250px;
-    border-bottom-right-radius: 250px;
     background-color: #D9B992;
-    /*padding-left: 13em;
-    padding-right: 5em;
-    padding-top: 7.5em;*/
+    /*padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;*/
+    border-radius: 50px;
+    text-align: center;
     font-size: 25px;
     /* QUANTA GAMBIARRA MEUDEUS */
 }
 .container-fruits p {
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
-    z-index: 1;
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
 
-.fruits {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-left: 20%;
-}
 
-/* parte das frutas */
 .fruits2 {
-    padding-right: 5%;
-    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
 }
 
 .pizza-container2 {
     position: absolute;
-    top: 39%;
-    left: 90%;
-    /*width: 100%;*/
-    height: 100%;
-    transform: scale(1.1);
+    top: 0%;
+    left: 35%;
+    transform: scale(0.8);
     
 }
 .container-fruits2 {
     position: relative;
-    height: 450px;
-    width: 90%;
-    margin-bottom: 10%;
-    /*margin-left: 10%;*/
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
     border: 3px solid black;
-    border-top-left-radius: 250px;
-    border-bottom-left-radius: 250px;
     background-color: #D9B992;
-    /*padding-left: 13em;
-    padding-right: 5em;
-    padding-top: 7.5em;*/
+    /*padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;*/
+    border-radius: 50px;
+    text-align: center;
     font-size: 25px;
     /* QUANTA GAMBIARRA MEUDEUS */
 }
 .container-fruits2 p {
-    margin-right: 16%;
-    margin-left: 5%;
-    margin-top: 10%;
-    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
 /* parte das frutas */
-
 
 
 

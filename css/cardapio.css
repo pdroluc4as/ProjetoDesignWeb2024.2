@@ -1,7 +1,20 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Roboto", serif;
 }
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
 
 body{
     background-image: url(imgs/Backgrounds/back.png);
@@ -70,6 +83,7 @@ nav h2{
     margin: 0 auto;
     font-size: 2.8em;
     margin-bottom: 0;
+    font-weight: 400;
 }
 nav li > a:hover{
     margin: auto;
@@ -79,7 +93,7 @@ nav li > a:hover{
     border-radius: 10px;
 }
 h1{
-    width: 167.792px;
+    width: 243.34px;
 }
 .fa-solid{
     font-size: 4.5em;
@@ -141,14 +155,16 @@ main h3{
     font-size: 4em;
     color: #3F0106;
     margin-left: 3em;
+    font-family: "Playfair-Display";
 }
 main p{
     color: #D9B992;
     width: 364px;
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
     margin: 0 auto;
     padding: 0.5em;
+    font-style: italic;
 }
 main .carrinho-de-compras a{
     color:#D9B992;
@@ -158,10 +174,11 @@ main .preco{
     border: 1px solid #D9B992;
     vertical-align: middle;
     border-radius: 100px;
-    text-align: right;
+    text-align: left;
     padding: 0.5em;
     margin: 1em;
     vertical-align: bottom;
+    font-weight: 300;
 }
 main .preco b{
     text-align: left;
@@ -185,12 +202,12 @@ main img{
     vertical-align: bottom;
 }
 div.descricao{
-    height: 90px;
+    height: 100px;
 }
 h4{
     font-size: 26px;
     color: #D9B992;
     text-align: left;
     margin-top: 10px;
-    margin-left: 42px;
+    margin-left: 30px;
 }

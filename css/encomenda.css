@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+body{
+    background-image: url(imgs/Backgrounds/back.png);
+    background-size: 20%;
+    background-repeat: repeat;
+}
+
+/* CSS DA PARTE DO MENU*/
+header{
+    background-color: #3F0106;
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    align-content: center;
+    padding: 0.8em;
+}
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-de-icones ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    text-align: center;
+    color: #D9B992;
+    text-decoration: none;
+    margin: auto 0;
+} 
+header ul{
+    padding: 0; 
+    text-align: left;
+    margin: 0 auto;
+}
+header li{
+    display: inline;
+    margin: auto 0;
+}
+header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #D9B992;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header nav li a{
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    background-color: #3F0106;
+    border: 1px solid #3F0106;
+    color: #D9B992;
+    border-radius: 10px;
+}
+nav h2{
+    margin: 0 auto;
+    margin: 0 auto;
+    font-size: 2.8em;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+nav li > a:hover{
+    margin: auto;
+    background-color: #D9B992;
+    border: 1px solid #D9B992;
+    color: #3F0106;
+    border-radius: 10px;
+}
+h1{
+    width: 243.34px;
+}
+.fa-solid{
+    font-size: 4.5em;
+    margin: 0.5em;
+}
+.fa-solid:hover{
+    color: white;
+}
+.menu-de-icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    border: 3px solid #3F0106;
+    border-radius: 100%;
+}
+.user:hover{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.menu-de-icones a{
+    vertical-align: middle;
+}
+.menu-de-icones li{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
+}
+
+/* parte das frutas */
+body {
+    text-align: center;
+    background-color: #f8e8c8;
+}
+
+
+
+/* Forms enconmendas */
+
+/*custom font*/
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+body {
+    font-family: montserrat, arial, verdana;
+}
+/* MODELANDO AS OPÇÕES */
+#msform fieldset.parte3 div.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#msform fieldset.parte3div.opcao button{
+    background-color: #3F0106;
+    color: #D9B992;
+    padding: 1em;
+    width: 300px;
+    border-radius: 18px;
+    border: none;
+    font-size: 1.1em;
+    margin: 1em;
+}
+#msform fieldset.parte3 .endereco{
+    background-color: #320105;
+    padding: 1em;
+    
+}
+#msform fieldset.parte3 .opcao-1{
+    display: flex;
+    flex-direction: column;
+}
+#msform fieldset.parte3 div.endereco input[type="text"]{
+    background-color: #D9B992;
+    border: none;
+    font-size: 1em;
+    padding: 0.4em;
+    width: 300px;
+    border-radius: 20px;
+    margin: 0.5em;
+    color: #320105;
+}
+#msform fieldset.parte3 div.endereco input::placeholder{
+    color: #320105;
+}
+textarea::placeholder{
+    font-weight: 300;
+}
+#msform fieldset.parte3 div.endereco{
+    color: #D9B992;
+}
+fieldset.parte3 p{
+    background-color: #82451F;
+    border:1px solid #D9B992;
+    border-radius: 150px;
+    font-size: 1.2em;
+    padding: 0.3em;
+}
+fieldset.parte3 > input[type="text"]{
+    background-color: #320105;
+    color: #D9B992;
+    padding: 1em;
+    border: none;
+    border-radius: 18px;
+    width: 650px;
+    margin-top: 10px;
+}
+fieldset.parte3 > input::placeholder{
+    color: #D9B992;
+    text-align: center;
+    font-size: 1.3em;
+}
+fieldset.parte3{
+    text-align: center;
+    margin: 2em auto;
+    width: 40%;
+}
+#msform fieldset.parte3 h1{
+    margin: 1em auto;
+}
+#msform fieldset.parte3 div.opcao{
+    margin: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+#msform fieldset.parte3 figure{
+    margin: 0 auto;
+    text-align: center;
+}
+/*form styles*/
+#msform {
+    margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset.parte1{
+    background-image: url(imgs/Backgrounds/background-forms-parte1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    border: none;
+    height: 130vh;
+    width: 100%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+#msform fieldset.parte2{
+    background-image: url(imgs/Backgrounds/background-forms-parte2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    border: none;
+    height: 130vh;
+    width: 100%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+#msform fieldset.parte3{
+    background: none;
+    border: none;
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+#msform input{
+    margin-top: 10px;
+    margin-right: 7px;
+}
+input[type="checkbox"] {
+    appearance: none; /* Remove o estilo padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 100px; /* Arredondado */
+    background-color: #D9B992;
+    cursor: pointer;
+    position: relative;
+}
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: #250101;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+label:nth-child(2), label:nth-child(6), label:nth-child(10), label:nth-child(14){
+    margin-left: 90px;
+}
+label:nth-child(2){
+    margin-top:60px;
+}
+label:nth-child(14){
+    margin-bottom:50px;
+}
+label{
+    color: #D9B992;
+    display: inline-block;
+    width: 285px;
+    height: 40px;
+    font-size: 0.9em;
+    text-align: left;
+}
+textarea{
+    background-color: #D9B992;
+    margin-top: 2em;
+    width: 40%;
+    height: 20%;
+    border: none;
+    font-size: 1.5em;
+    color: #250101;
+    margin-bottom: 1.5em;
+    margin-right: 3%;
+}
+textarea::placeholder{
+    color: #250101;
+    padding: 1em;
+}
+/* h3 */
+h3{
+    font-size: 1.5em;
+    background-color: #250101;
+    border: 3px solid #D9B992;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 30%;
+    padding: 1em;
+    text-align: center;
+    width: 30%;
+    color: #D9B992;
+    font-family: "Playfair-Display";
+}
+#msform fieldset.parte2 h3{
+    font-size: 1.5em;
+    background-color: #250101;
+    border: 3px solid #D9B992;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 28%;
+    margin-right: 35%;
+    padding: 1em;
+    text-align: center;
+    width: 30%;
+    color: #D9B992;
+}
+/*buttons*/
+#msform fieldset.parte2 .action-button {
+    width: 100px;
+	background: #82451F;
+	font-weight: bold;
+	color: #D9B992;
+	border: 0 none;
+	border-radius: 100px;
+	cursor: pointer;
+	padding: 10px;
+    text-decoration: none;
+    font-size: 32px;
+    width: 200px;
+}
+#msform .action-button {
+    width: 100px;
+	background: #82451F;
+	font-weight: bold;
+	color: #D9B992;
+	border: 0 none;
+	border-radius: 100px;
+	cursor: pointer;
+	padding: 10px;
+    text-decoration: none;
+    font-size: 32px;
+    width: 200px;
+    margin-right: 3%;
+    font-family: "Playfair-Display";
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 3px #D9B992;
+}
+/* progressbar */
+/* progressbar */
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Garante que os itens fiquem sobre a linha */
+}
+
+/* Barra de fundo (linha principal) */
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Centraliza a linha verticalmente */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Engrossa a linha */
+    background: #250101; /* Cor da linha inicial */
+    z-index: 0; /* Garante que a linha fique abaixo dos itens */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+/* Estilos dos itens da barra */
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 30%;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1; /* Coloca os itens sobre a linha */
+}
+
+/* Estilos do número e texto juntos */
+#progressbar li .step-container {
+    display: inline-block;
+    background: #250101;
+    border-radius: 10px; 
+    color: #D9B992;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Playfair Display";
+}
+
+/* Quando o item estiver ativo */
+#progressbar li.active .step-container {
+    background: #82451F; /* Cor do fundo do quadrado */
+    color: #D9B992; /* Cor do texto dentro do quadrado */
+}
+
+/* Conector entre os itens */
+#progressbar li.active:after {
+    background: #250101; /* Cor do conector */
+    height: 30px;
+}
+
+/* Esconder o número padrão */
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    display: none;
+}
+
+/* Conectores entre os itens */
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #250101;
+    position: absolute;
+    left: -50%;
+    top: 18px; /* Ajuste a altura do conector */
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+
+/* Remover borda ou linha indesejada */
+#progressbar li::before, #progressbar li::after {
+    content: none;
+}
+
+/* Transição suave */
+#progressbar li {
+    transition: all 0.3s ease;
+}
+#msform fieldset.parte3 .action-button{
+    border: 3px solid #25010100;
+}
+
+#msform .action-button.submit:hover{
+    border: 3px solid #250101;
+}
+#msform fieldset.parte3 .action-button:hover{
+    border: 3px solid #250101;
+}

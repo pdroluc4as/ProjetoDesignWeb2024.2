@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/eb5472cd53.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="formsencomendas.js" defer></script>
-    <link rel="stylesheet" href="main.css">
+    <script src="js/formsencomendas.js" defer></script>
+    <link rel="stylesheet" href="css/encomenda.css">
     <title>Encomenda</title>
 </head>
 <body>
@@ -49,7 +55,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="login.html">
+                    <a href="carrinho1.html">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                 </li>
@@ -63,37 +69,51 @@
     <form id="msform">
         <!-- progressbar -->
         <ul id="progressbar">
-        <li class="active">Account Setup</li>
-        <li>Social Profiles</li>
-        <li>Personal Details</li>
+            <li class="active"><div class="step-container">1 <br> Doces</div></li>
+            <li><div class="step-container">2 <br> Especiais</div></li>
+            <li><div class="step-container">3 br Endereço</div></li>
         </ul>
         <!-- fieldsets -->
-        <fieldset>
-            <h2 class="fs-title">Create your account</h2>
-            <h3 class="fs-subtitle">This is step 1</h3>
-            <input type="text" name="email" placeholder="Email" />
-            <input type="password" name="pass" placeholder="Password" />
-            <input type="password" name="cpass" placeholder="Confirm Password" />
+        <fieldset class="parte1">
+            <h3 class="fs-subtitle">Quais doces deseja encomendar?</h3>
+            <label><input type="checkbox" name="doce" id="Trufa-de-Chocolate">Trufa de Chocolate</label>
+            <label><input type="checkbox" name="doce" id="Torta-de-Chocolate-Amargo">Torta de Chocolate Amargo</label>
+            <label><input type="checkbox" name="doce" id="Torta-Banoffee">Torta Banoffee</label> <br>
+            <label><input type="checkbox" name="doce" id="Brownie-com-Sorvete">Brownie com Sorvete</label>
+            <label><input type="checkbox" name="doce" id="Cookies-de-Chocolate">Cookies de Chocolate</label>
+            <label><input type="checkbox" name="doce" id="Bundts-de-Chocolate-Amargo">Bundts de Chocolate Amargo</label> <br>
+            <label><input type="checkbox" name="doce" id="Cheesecake-de-Floresta-Negra">Cheesecake de Floresta Negra</label>
+            <label><input type="checkbox" name="doce" id="Tartelettes-de-Framboesa">Tartelettes-de-Framboesa</label>
+            <label><input type="checkbox" name="doce" id="Bolinhas-de-Coco-e-Limão">Bolinhas de Coco e Limão</label> <br>
+            <label><input type="checkbox" name="doce" id="Cheesecake-Tradicional">Cheesecake Tradicional</label> 
+            <label><input type="checkbox" name="doce" id="Cheesecake-de-Menta-e-Chocolate">Cheesecake de Menta e Chocolate</label> 
+            <label><input type="checkbox" name="doce" id="Torta-de-Chocolate-Derretido">Torta de Chocolate Derretido</label> <br>
             <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-        <fieldset>
-            <h2 class="fs-title">Social Profiles</h2>
-            <h3 class="fs-subtitle">Your presence on the social network</h3>
-            <input type="text" name="twitter" placeholder="Twitter" />
-            <input type="text" name="facebook" placeholder="Facebook" />
-            <input type="text" name="gplus" placeholder="Google Plus" />
+        <fieldset class="parte2">
+            <h3 class="fs-subtitle">Alguma observação sobre o produto?</h3>
+            <textarea name="" id="" placeholder="Digite quaisquer informações importantes, alergias ou mudanças que deseje em relação ao pedido original"></textarea><br>
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-        <fieldset>
-            <h2 class="fs-title">Personal Details</h2>
-            <h3 class="fs-subtitle">We will never sell it</h3>
-            <input type="text" name="fname" placeholder="First Name" />
-            <input type="text" name="lname" placeholder="Last Name" />
-            <input type="text" name="phone" placeholder="Phone" />
-            <textarea name="address" placeholder="Address"></textarea>
+        <fieldset class="parte3">
+            <figure><img src="imgs/Backgrounds/caixa-fechada.png" alt=""></figure>
+            <div class="container endereco">
+                <div class="opcao-1">
+                    <input type="text" placeholder="Digite seu país">
+                    <input type="text" placeholder="Digite seu estado">
+                    <input type="text" placeholder="Digite sua cidade">
+                    <input type="text" placeholder="Digite sua rua e bairro">
+                </div>
+                <p>OU</p>
+                <div class="opcao-1">
+                    <input type="text" placeholder="Digite seu CEP">
+                </div>
+            </div>
+            <input type="text" placeholder="Número da residência"><br>
+            <input type="text" placeholder="Complemento ou ponto de referência"><br>
             <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
+            <a href="index.html" class="submit action-button" target="_top">Finalizar Pedido</a>
         </fieldset>
     </form>
 

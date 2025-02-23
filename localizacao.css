@@ -140,6 +140,7 @@ main {
     border-radius: 20px;
     border: solid 3px #D9B992;
     color: #D9B992;
+    cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .flip-container:hover .frente {
@@ -269,19 +270,40 @@ main {
 .flip-button {
     margin-top: 6%;
     margin-left: 37%;
-    padding: 8px 16px;
+    /*padding: 8px 16px;
     font-size: 16px;
     background-color: #D9B992;
     color: #3F0106;
-    border-radius: 10px;
+    border-radius: 10px;*/
+    border: none;
     cursor: pointer;
-    transition: background 0.3s ease;
+    background-color: transparent;
+    /*transition: background 0.3s ease;*/
+}
+button img {
+    vertical-align: top;
+    transform: scale(1.2);
 }
 
-.flip-button:hover {
-    background-color: #b39472;
-}
+/*.flip-button:hover {
+    /*background-color: #b39472;
+}*/
 .card {
     width: 28%;
+}
+.vermelho {
+    width: 100%;
+    margin-top: 10%;
+    height: 10%;
+    background-color: red;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.flip-button {
+    transition: opacity 0.5s ease;
 }
 /* animação flip */

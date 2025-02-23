@@ -1,10 +1,10 @@
 html{
-    background-image: url(imgs/Backgrounds/back.png);
+    background-image: url(../imgs/Backgrounds/back.png);
     background-size: 20%;
     background-repeat: repeat;
 }
 body{
-    background-image: url(imgs/Backgrounds/encomendas-sorvete-background.png);
+    background-image: url(../imgs/Backgrounds/encomendas-sorvete-background.png);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: top;

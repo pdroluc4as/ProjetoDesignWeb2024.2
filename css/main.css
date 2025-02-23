@@ -18,7 +18,7 @@
 }
 
 body{
-    background-image: url(imgs/Backgrounds/back.png);
+    background-image: url(../imgs/Backgrounds/back.png);
     background-size: 20%;
     background-repeat: repeat;
 }
@@ -51,7 +51,7 @@ header{
     margin: 0 auto;
     text-align: center;
     /* Raica: aqui me fudeo, como q eu arrumo esse texto? */
-    background-image: url(imgs/Backgrounds/background-MaisVendidos.png);
+    background-image: url(../imgs/Backgrounds/background-MaisVendidos.png);
     /* Raica: bem bugadinho graças a Deus */
     padding-top: 5%;
     padding-bottom: 20%;
@@ -73,6 +73,7 @@ header{
 }
 .mais-vendidos h2{
     color: #D9B992;
+    font-size: 2.7em;
     padding: 2em;
 }
 
@@ -115,6 +116,7 @@ header{
     border-radius: 20px;
     border: solid 3px #D9B992;
     color: #D9B992;
+    cursor: pointer;
 }
 
 .tras{
@@ -125,6 +127,7 @@ header{
     border-radius: 20px;
     border: solid 3px #3F0106;
     color: #D9B992;
+    cursor: pointer;
 }
 
 .flip-container .flipper .frente h3 {
@@ -272,7 +275,10 @@ header{
 #categoria p > a{
     color: #D9B992;
     text-decoration: none;
-    padding: 900em
+}
+#categoria a{
+    display: inline-block;
+    width: 500px;
 }
 
 
@@ -411,16 +417,6 @@ body {
     transform: rotate(315deg); 
 }
 
-.pizza-container {
-    position: absolute;
-    top: 3%;
-    left: -50%;
-    width: 100%;
-    height: 100%;
-    transform: scale(1.1);
-    z-index: 0;
-    
-}
 
 /* isso daqui tem que ficar depois dos slices por algum motivo que eu não sei */
 .slice {
@@ -430,76 +426,84 @@ body {
     transform-origin: center center; /* Gira em torno do próprio centro */
     transform: rotate(-45deg); /* Corrige a rotação das imagens */
 }
+
+.pizza-container {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    transform: scale(0.8);
+}
+
+.fruits {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    /*padding-left: 20%;*/
+}
 .slice img {
     border: 3px solid black;
     border-radius: 50%;
 }
 .container-fruits {
     position: relative;
-    height: 450px;
-    width: 95%;
-    margin-bottom: 10%;
-    /*margin-left: 10%;*/
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
     border: 3px solid black;
-    border-top-right-radius: 250px;
-    border-bottom-right-radius: 250px;
     background-color: #D9B992;
-    /*padding-left: 13em;
-    padding-right: 5em;
-    padding-top: 7.5em;*/
+    /*padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;*/
+    border-radius: 50px;
+    text-align: center;
     font-size: 25px;
     /* QUANTA GAMBIARRA MEUDEUS */
 }
 .container-fruits p {
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
-    z-index: 1;
+    margin-top: 15%;
+    margin-bottom: 10%;
     font-family: "Playfair-Display";
-}
-
-.fruits {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-left: 20%;
+    z-index: 1;
 }
 
 /* parte das frutas */
 .fruits2 {
-    padding-right: 5%;
-    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
 }
 
 .pizza-container2 {
     position: absolute;
-    top: 39%;
-    left: 90%;
-    /*width: 100%;*/
-    height: 100%;
-    transform: scale(1.1);
+    top: 0%;
+    left: 35%;
+    transform: scale(0.8);
     
 }
 .container-fruits2 {
     position: relative;
-    height: 450px;
-    width: 90%;
-    margin-bottom: 10%;
-    /*margin-left: 10%;*/
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
     border: 3px solid black;
-    border-top-left-radius: 250px;
-    border-bottom-left-radius: 250px;
     background-color: #D9B992;
-    /*padding-left: 13em;
-    padding-right: 5em;
-    padding-top: 7.5em;*/
+    /*padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;*/
+    border-radius: 50px;
+    text-align: center;
     font-size: 25px;
     /* QUANTA GAMBIARRA MEUDEUS */
 }
 .container-fruits2 p {
-    margin-right: 16%;
-    margin-left: 5%;
-    margin-top: 10%;
-    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    margin-bottom: 10%;
     font-family: "Playfair-Display";
 }
 /* parte das frutas */

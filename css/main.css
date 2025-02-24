@@ -66,8 +66,9 @@ header{
 }
 
 .mais-vendidos a{
-    padding-inline: 0;
-    padding-block: 0.3em;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
     border: 1px solid #3F0106;
     color: #3F0106;
 }
@@ -240,7 +241,6 @@ header{
 } 
 #categoria div{
     display: inline-block;
-    padding: 0.5em 1em;
     text-decoration: none;
     font-size: 1.76em;
     color: #D9B992;
@@ -251,9 +251,18 @@ header{
     width: 200px;
     vertical-align: bottom;
 }
+#categoria div p > a{
+    display: inline-block;
+    height: 99px;
+    width: 199px;
+    text-align: center;
+}
+#categoria p{
+    text-align: center;
+}
 #categoria div:hover{
     margin: auto 0;
-    height: 200px;
+    height: 250px;
     width: 200px;
     border: 1px solid #D9B992;
     border-radius: 10px;
@@ -264,7 +273,7 @@ header{
 #categoria div > a{
     text-decoration: none;
     display: flex;
-    height: 100px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     color: #D9B992;
@@ -275,10 +284,12 @@ header{
 #categoria p > a{
     color: #D9B992;
     text-decoration: none;
+    text-align: center;
+    vertical-align: top;
 }
 #categoria a{
-    display: inline-block;
-    width: 500px;
+    padding: 1.5em;
+    text-align: center;
 }
 
 

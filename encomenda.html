@@ -18,50 +18,42 @@
 </head>
 <body>
     <header>
-        <!-- Raica:
-
-         Explicando as mudanças, o menu de cima inteiro é interativo, portanto ele é um nav, mas ele se subdivide em áreas
-         1- Logo que DEVE ser um h1, pq é o "nome" do site, msm q seja uma logo;
-         2- Navegação principal relacionada ao site
-         3- Interesses pessoais do usuário: localizações, perfil/login e carrinho de compras -->
-
-         <!-- MINHA VISÃO, por isso os ul na terceira parte-->
-         <!-- Raica: tô em dúvida se esse âncora pode ficar solto e por fora ou fica dentro da tag de h1 -->
-         <h1><a href="index.html"><img src="imgs/icones/logo.png" width="70" alt="Logo do site"></a></h1>
-         <nav>
-            <ul>
-                <!-- Raica: Não se coloca ancora sem nadaaaaa, entt taqui uns h2 já q são menus/h2 futuros nas outras partes do site-->
-                <li><a href="encomenda.html"><h2>Encomendas</h2></a></li>
-                <li><a href="cardapio.html"><h2>Cardápio</h2></a></li>
-                <!-- versão anterior 
-
-                 <li><a href="#">Cardápip</a></li> 
-
-                 Raica: sono tava grande ein? ksksks-->
-                <li><a href="avaliacoes.html"><h2>Avaliações</h2></a></li>
+        <nav>
+            <h1><a href="index.html"><img src="../imgs/icones/logo.png" width="70" alt="Logo do site"></a></h1>
+            <div class="menucelular">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            <ul class="navlist">
+                <li class="menu1">
+                    <ul class="menu-de-produtos">
+                        <li><a href="encomenda.html"><h2>Encomendas</h2></a></li>
+                        <li><a href="cardapio.html"><h2>Cardápio</h2></a></li>
+                        <li><a href="avaliacoes.html"><h2>Avaliações</h2></a></li>
+                    </ul>
+                </li>
+                <li class="menu2">
+                    <ul class="menu-de-icones">
+                        <li>
+                            <a href="localizacao.html">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                        </li>
+                        <li class="imagem-user">
+                            <a href="login.html">
+                                <img class= "user" src="../imgs/icones/usuario.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="carrinho1.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-            <!-- Raica: precisa de div nesse daí de cima será? -->
         </nav>
-        <div class="menu-de-icones">
-            <ul>
-                <li>
-                    <a href="localizacao.html">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </a>
-                </li>
-                <li class="imagem-user">
-                    <a href="login.html">
-                        <img class= "user" src="imgs/icones/usuario.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="carrinho1.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </li>
-            </ul>
-            <!-- Raica: mudar esse href qnd puder -->
-        </div>
     </header>
     <main>
 

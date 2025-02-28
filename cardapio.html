@@ -10,55 +10,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cardapio.css">
+    <script src="js/navbar.js"></script>
     <script src="https://kit.fontawesome.com/eb5472cd53.js" crossorigin="anonymous"></script>
     <title>Cardápio</title>
 </head>
 <body>
     <header>
-        <!-- Raica:
-
-         Explicando as mudanças, o menu de cima inteiro é interativo, portanto ele é um nav, mas ele se subdivide em áreas
-         1- Logo que DEVE ser um h1, pq é o "nome" do site, msm q seja uma logo;
-         2- Navegação principal relacionada ao site
-         3- Interesses pessoais do usuário: localizações, perfil/login e carrinho de compras -->
-
-         <!-- MINHA VISÃO, por isso os ul na terceira parte-->
-         <!-- Raica: tô em dúvida se esse âncora pode ficar solto e por fora ou fica dentro da tag de h1 -->
-         <h1><a href="index.html"><img src="imgs/icones/logo.png" width="70" alt="Logo do site"></a></h1>
-         <nav>
-            <ul>
-                <!-- Raica: Não se coloca ancora sem nadaaaaa, entt taqui uns h2 já q são menus/h2 futuros nas outras partes do site-->
-                <li><a href="encomenda.html"><h2>Encomendas</h2></a></li>
-                <li><a href="cardapio.html"><h2>Cardápio</h2></a></li>
-                <!-- versão anterior 
-
-                 <li><a href="#">Cardápip</a></li> 
-
-                 Raica: sono tava grande ein? ksksks-->
-                <li><a href="avaliacoes.html"><h2>Avaliações</h2></a></li>
+        <nav>
+            <h1><a href="index.html"><img src="../imgs/icones/logo.png" width="70" alt="Logo do site"></a></h1>
+            <div class="menucelular">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            <ul class="navlist">
+                <li class="menu1">
+                    <ul class="menu-de-produtos">
+                        <li><a href="encomenda.html"><h2>Encomendas</h2></a></li>
+                        <li><a href="cardapio.html"><h2>Cardápio</h2></a></li>
+                        <li><a href="avaliacoes.html"><h2>Avaliações</h2></a></li>
+                    </ul>
+                </li>
+                <li class="menu2">
+                    <ul class="menu-de-icones">
+                        <li>
+                            <a href="localizacao.html">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                        </li>
+                        <li class="imagem-user">
+                            <a href="login.html">
+                                <img class= "user" src="../imgs/icones/usuario.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="carrinho1.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-            <!-- Raica: precisa de div nesse daí de cima será? -->
         </nav>
-        <div class="menu-de-icones">
-            <ul>
-                <li>
-                    <a href="localizacao.html">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </a>
-                </li>
-                <li class="imagem-user">
-                    <a href="login.html">
-                        <img class= "user" src="imgs/icones/usuario.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="carrinho1.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </li>
-            </ul>
-            <!-- Raica: mudar esse href qnd puder -->
-        </div>
     </header>
     <main>
         <form action=""></form>
@@ -68,7 +61,30 @@
             <h3>Tortas</h3>
             <div class="container tortas">
                 <div class="card tortas">
-                    <figure><img src="imgs/comidas/Torta-de-Chocolate-Derretido.png" alt=""></figure>
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao">
+                            <label for="coracao"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Torta-de-Chocolate-Derretido.png" alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Torta de Chocolate Derretido</h4>
                         <p>
@@ -86,7 +102,30 @@
                 </div>
     
                 <div class="card tortas">
-                    <img src="imgs/comidas/Torta-de-Chocolate-Amargo.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-torta1">
+                            <label for="coracao-torta1"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Torta-de-Chocolate-Amargo.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Torta de Chocolate Amargo</h4>
                         <p>
@@ -104,7 +143,30 @@
                 </div>
     
                 <div class="card tortas">
-                    <img src="imgs/comidas/Torta-Banoffee.png" alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-torta2">
+                            <label for="coracao-torta2"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Torta-Banoffee.png" alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Torta Banoffee</h4>
                         <p>
@@ -127,7 +189,30 @@
             <h3>Chocolates</h3>
             <div class="container chocolates">
                 <div class="card chocolates">
-                    <img src="imgs/comidas/Brownie-com-Sorvete.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-chocolate2">
+                            <label for="coracao-chocolate2"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Brownie-com-Sorvete.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Brownie com Sorvete</h4>
                         <p>
@@ -145,7 +230,30 @@
                 </div>
     
                 <div class="card chocolates">
-                    <img src="imgs/comidas/Cookies-de-Chocolate.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-chocolate2">
+                            <label for="coracao-chocolate2"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Cookies-de-Chocolate.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Cookies de Chocolate</h4>
                         <p>
@@ -163,7 +271,30 @@
                 </div>
     
                 <div class="card chocolates">
-                    <img src="imgs/comidas/Bundts-de-Chocolate-Amargo.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-chocolate3">
+                            <label for="coracao-chocolate3"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Bundts-de-Chocolate-Amargo.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Bundts de Chocolate Amargo</h4>
                         <p>
@@ -186,7 +317,30 @@
             <h3>Frudados</h3>
             <div class="container frutados">
                 <div class="card frutados">
-                    <img src="imgs/comidas/Cheesecake-de-Floresta-Negra.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-frutados1">
+                            <label for="coracao-frutados1"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Cheesecake-de-Floresta-Negra.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Cheesecake de Floresta Negra</h4>
                         <p>
@@ -204,7 +358,30 @@
                 </div>
     
                 <div class="card frutados">
-                    <img src="imgs/comidas/Tartelettes-de-Framboesa.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-frutados2">
+                            <label for="coracao-frutados2"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Tartelettes-de-Framboesa.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Tartelettes de Framboesa</h4>
                         <p>
@@ -222,7 +399,30 @@
                 </div>
     
                 <div class="card frutados">
-                    <img src="imgs/comidas/Bolinhas-de-Coco-e-Limão.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao">
+                            <label for="coracao"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Bolinhas-de-Coco-e-Limão.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Bolinhas de Coco e Limão</h4>
                         <p>
@@ -245,7 +445,30 @@
             <h3>Gelatos</h3>
             <div class="container gelatos">
                 <div class="card gelatos">
-                    <img src="imgs/comidas/Sorvete-de-Chocolate-Belga.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-gelatos1">
+                            <label for="coracao-gelatos1"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Sorvete-de-Chocolate-Belga.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Sorvete de Chocolate Belga</h4>
                         <p>
@@ -263,7 +486,30 @@
                 </div>
     
                 <div class="card gelatos">
-                    <img src="imgs/comidas/Casquinha-de-Sorvete.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-gelatos2">
+                            <label for="coracao-gelatos2"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Casquinha-de-Sorvete.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Casquinha de Sorvete</h4>
                         <p>
@@ -281,7 +527,30 @@
                 </div>
     
                 <div class="card gelatos">
-                    <img src="imgs/comidas/Sorvete-com-biscoito-de-mascarpone.png"  alt="">
+                    <figure>
+                        <span class="like">
+                            <input type="checkbox" name="heart" id="coracao-gelatos3">
+                            <label for="coracao-gelatos3"></label>
+                        </span>
+                        <span class="rating">
+                            <!-- estrela 1 -->
+                            <input type="radio" name="rating" id="estrela1">
+                            <label for="estrela1"></label>
+                            <!-- estrela 2 -->
+                            <input type="radio" name="rating" id="estrela2">
+                            <label for="estrela2"></label>
+                            <!-- estrela 3 -->
+                            <input type="radio" name="rating" id="estrela3">
+                            <label for="estrela3"></label>
+                            <!-- estrela 4 -->
+                            <input type="radio" name="rating" id="estrela4">
+                            <label for="estrela4"></label>
+                            <!-- estrela 5 -->
+                            <input type="radio" name="rating" id="estrela5">
+                            <label for="estrela5"></label>
+                        </span>
+                        <img src="imgs/comidas/Sorvete-com-biscoito-de-mascarpone.png"  alt="">
+                    </figure>
                     <div class="descricao">
                         <h4>Sorvete com biscoito de mascarpone</h4>
                         <p>

@@ -1,18 +1,18 @@
-.rating{
+.like{
     margin: 190px auto;
     width: 400px;
 }
-.rating > *{
+.like > *{
     float: right;
 }
-.rating label{
+.like label{
     height: 40px;
     width: 20%;
     display: block;
     position: relative;
     cursor: pointer;
 }
-.rating label::after{
+.like label::after{
     transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
     position: absolute;
@@ -28,16 +28,16 @@
     animation: 1s pulse ease;
 }
 /* efeitos de hover */
-.rating label:hover::after{
+.like label:hover::after{
     color: #5e5e5e;
     text-shadow: 0 0 15px #5e5e5e;
     /* é o que dá o desfoque atras */
 }
-.rating input{
+.like input{
     display: none;
 }
-.rating input:checked + label::after,
-.rating input:checked ~ label::after{
+.like input:checked + label::after,
+.like input:checked ~ label::after{
     content: "❤";
     color: red;
     top: 20px;

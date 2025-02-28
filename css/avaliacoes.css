@@ -52,21 +52,21 @@ nav{
     text-decoration: none;
     margin: auto 0;
 } 
-.menu1{
+.menu-principal{
     display: flex;
     width: 50%;
     align-items: center;
     text-align: center;
 }
-.menu2{
+.menu-de-usuario{
     display: flex;
     justify-content: flex-end;
     width: 40%;
 }
-.menu-de-produtos{
+.menu-de-usuario > ul{
     display: flex;
 }
-header .menu-de-produtos li{
+header .menu-principal > ul li{
     display: inline;
     margin: auto 0;
 }
@@ -82,7 +82,7 @@ header a{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-header nav .menu-de-produtos li a{
+header nav .menu-principal > ul li a{
     padding: 0.5em 1em;
     margin: 0 auto;
     background-color: #3F0106;
@@ -97,7 +97,7 @@ nav h2{
     margin-bottom: 0;
     font-weight: 400;
 }
-nav .menu-de-produtos li > a:hover{
+nav .menu-principal > ul li > a:hover{
     margin: auto;
     background-color: #D9B992;
     border: 1px solid #D9B992;
@@ -191,7 +191,7 @@ body {
         margin-left: 0;
         opacity: 0;
     }
-    .menu-de-produtos{
+    .menu-principal > ul{
         width: 100%;
         flex-direction: column;
         gap: 15px;

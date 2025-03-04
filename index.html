@@ -16,8 +16,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/eb5472cd53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
     <title>Caramell L’amour & Cherry </title>
 </head>
 
@@ -133,91 +133,231 @@
         </section>
         <section class="mais-vendidos">
             <h2>Mais Vendidos</h2>
-             <div class="cards-conteiner">
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/cheesecake.png" alt="Cheesecake Tradicional">
-                             </div>
-                             <h3>Cheesecake Tradicional</h3>
-                             <p>Uma mistura rica e aveludada que derrete na boca, feita de: biscoito, manteiga sem sal, cream cheese, açúcar, ovos e creme de leite</p>
-                             <p><a href="">R$400,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/cheesecake.png" alt="Cheesecake Tradicional">
-                             </div>
-                             <h3>Cheesecake Tradicional</h3>
-                             <p><a href="carrinho1.html">R$400,00</a></p>
-                         </div>
-                     </div>
-                 </div>
-     
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png" alt="trunfas de chocolate e framboesa">
-                             </div>
-                             <h3>Trufas de chocolate amargo e framboesa</h3>
-                             <p>Pequenas intensas e sedosas. Feitas de: chocolate 70%, creme de leite fresco, purê de framboesa, manteiga sem sal e cacau em pó.</p>
-                             <p><a>R$40,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png" alt="trunfas de chocolate e framboesa">
-                             </div>
-                             <h3>Trufas de chocolate amargo e framboesa</h3>
-                             <p><a href="carrinho1.html">R$40,00</a></p>
-                         </div>
-                     </div>
-                 </div>
-     
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png" alt="trunfa salgada de abacate com chocolate">
-                             </div>
-                             <h3>Trufas de Abacate com Chocolate </h3>
-                             <p>Uma fusão ousada e sedosa. Feita de: chocolate 70%, abacate maduro, manteiga sem sal, creme de leite fresco e uma pitada de flor de sal.</p>
-                             <p><a>R$25,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png" alt="trunfa salgada de abacate com chocolate">
-                             </div>
-                             <h3>Trufas de Abacate com Chocolate </h3>
-                             <p><a href="carrinho1.html">R$25,00</a></p>
-                         </div>
-                     </div>
-                 </div>
-     
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png" alt="chessecake de menta e chocolate">
-                             </div>
-                             <h3>Cheesecake de Menta e Chocolate</h3>
-                             <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
-                             <p><a>R$410,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png " alt="Cheesecakede menta e chocolate">
-                             </div>
-                             <h3>Cheesecake de Menta e Chocolate</h3>
-                             <p><a href="carrinho1.html">R$410,00</a></p>
-                         </div>
-                     </div>
-                 </div>
+            
+            <!-- CARDS -->
+             <div class="cards-conteiner swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper">
+                                <div class="tras">
+                                    <h3>Cheesecake Tradicional</h3>
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/cheesecake.png">
+                                    </div>
+                                    <p>Uma mistura rica e aveludada que derrete na boca, feita de: biscoito, manteiga sem sal, cream cheese, açúcar, ovos e creme de leite</p>
+                                    <a><p>R$400,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <h3>Cheesecake Tradicional</h3>
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/cheesecake.png">
+                                    </div>
+                                    <a href="carrinho1.html"><p>R$400,00</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper">
+                                <div class="tras">
+                                    <!-- Raica: tenho que arranjar um novo doce pra esse -->
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png">
+                                    </div>
+                                    <h3>Trufas de chocolate amargo e framboesa</h3>
+                                    <p>Pequenas intensas e sedosas. Feitas de: chocolate 70%, creme de leite fresco, purê de framboesa, manteiga sem sal e cacau em pó.</p>
+                                    <a><p>R$40,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png">
+                                    </div>
+                                    <h3>Trufas de chocolate amargo e framboesa</h3>
+                                    <a href="carrinho1.html"><p>R$40,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper">
+                                <div class="tras">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png">
+                                    </div>
+                                    <h3>Trufas de Abacate com Chocolate </h3>
+                                    <p>Uma fusão ousada e sedosa. Feita de: chocolate 70%, abacate maduro, manteiga sem sal, creme de leite fresco e uma pitada de flor de sal.</p>
+                                    <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                    <a><p>R$25,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png">
+                                    </div>
+                                    <h3>Trufas de Abacate com Chocolate </h3>
+                                    <a href="carrinho1.html"><p>R$25,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper ">
+                                <div class="tras">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>Cheesecake de Menta e Chocolate</h3>
+                                    <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                    <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
+                                    <a><p>R$410,00 </p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>Cheesecake de Menta e Chocolate</h3>
+                                    <a href="carrinho1.html"><p>R$410,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper ">
+                                <div class="tras">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>Cheesecake de Menta e Chocolate</h3>
+                                    <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                    <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
+                                    <a><p>R$410,00 </p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>teste1</h3>
+                                    <a href="carrinho1.html"><p>R$410,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper ">
+                                <div class="tras">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>Cheesecake de Menta e Chocolate</h3>
+                                    <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                    <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
+                                    <a><p>R$410,00 </p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>teste2</h3>
+                                    <a href="carrinho1.html"><p>R$410,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper ">
+                                <div class="tras">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>Cheesecake de Menta e Chocolate</h3>
+                                    <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                    <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
+                                    <a><p>R$410,00 </p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>teste3</h3>
+                                    <a href="carrinho1.html"><p>R$410,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flip-container" onclick="this.classList.toggle('active')">
+                            <div class="flipper ">
+                                <div class="tras">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>Cheesecake de Menta e Chocolate</h3>
+                                    <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                    <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
+                                    <a><p>R$410,00 </p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                                <div class="frente">
+                                    <div class="div-image">
+                                        <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                    </div>
+                                    <h3>teste4</h3>
+                                    <a href="carrinho1.html"><p>R$410,00</p></a>
+                                    <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                    <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
              </div>
+            <!-- CARDS -->
+
         </section>
         <div class="fruits">
             <div class="container-fruits">
-                <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>
                 <div class="pizza-container">
                     <div class="slice slice1"><img src="imgs/slices/slice1.png" alt="Fatia 1 - imagem de Morangos"></div>
                     <div class="slice slice2"><img src="imgs/slices/slice2.png" alt="Fatia 2 - imagem de Acerolas"></div>
@@ -228,11 +368,11 @@
                     <div class="slice slice7"><img src="imgs/slices/slice7.png" alt="Fatia 7 - imagem de Romãs"></div>
                     <div class="slice slice8"><img src="imgs/slices/slice8.png" alt="Fatia 8 - imagem de Groselha"></div>
                 </div>
+                <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>
             </div>
         </div>
         <div class="fruits2">
             <div class="container-fruits2">
-                <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>
                 <div class="pizza-container2">
                     <div class="slice slice1"><img src="imgs/slices/slice9.png" alt="Fatia 1 - imagem de mangostão"></div>
                     <div class="slice slice2"><img src="imgs/slices/slice10.png" alt="Fatia 2 - imagem de Açaí"></div>
@@ -243,9 +383,11 @@
                     <div class="slice slice7"><img src="imgs/slices/slice15.png" alt="Fatia 7 - imagem de Ameixa"></div>
                     <div class="slice slice8"><img src="imgs/slices/slice16.png" alt="Fatia 8 - imagem de Jabuticaba"></div>
                 </div>
+                <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>               
             </div>
         </div>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

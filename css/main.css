@@ -52,7 +52,7 @@ header{
     margin: 0 auto;
     text-align: center;
     /* Raica: aqui me fudeo, como q eu arrumo esse texto? */
-    background-image: url(imgs/Backgrounds/background-MaisVendidos.png);
+    background-image: url(../imgs/Backgrounds/background-MaisVendidos.png);
     /* Raica: bem bugadinho graças a Deus */
     padding-top: 5%;
     padding-bottom: 20%;
@@ -62,7 +62,7 @@ header{
 }
 
 .swiper-button-prev, .swiper-button-next{
-    color: black;
+    color: #D9B992;
 }
 
 .cards-conteiner{

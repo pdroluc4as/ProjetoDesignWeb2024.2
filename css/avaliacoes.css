@@ -39,6 +39,7 @@ main{
 header{
     background-color: #3F0106;
     padding: 0.8em;
+    height: 90px;
 }
 nav{
     flex-grow: 1;
@@ -104,7 +105,7 @@ nav .menu-principal > ul li > a:hover{
     border-radius: 10px;
 }
 h1{
-    width: 40%;
+    width: 45%;
     margin-right: auto;
     margin-left: 0;
     text-align: left;
@@ -244,6 +245,8 @@ body {
 .menucelular.active .linha3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
+
 /* CSS dos comentários */
 img{
     text-align: center;

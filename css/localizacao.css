@@ -37,6 +37,7 @@ header{
     display: flex;
     align-items: center;
     padding: 0.8em;
+    height: 90px;
 }
 nav{
     flex-grow: 1;
@@ -102,7 +103,7 @@ nav .menu-principal > ul li > a:hover{
     border-radius: 10px;
 }
 h1{
-    width: 40%;
+    width: 45%;
     margin-right: auto;
     margin-left: 0;
     text-align: left;
@@ -291,8 +292,14 @@ main {
 }
 
 .flip-container .flipper .frente h3 {
-    margin-top: 70%;
+    margin-top: 90%;
     font-size: 30px;
+    background-color: #3F0106;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .flip-container .flipper .tras h3 {
@@ -443,4 +450,29 @@ button img {
 
 h3{
     font-family: "Playfair Display";
+}
+.card-1 .frente{
+    background-image: url(../imgs/faxadas/jumeirah.jpg);
+    background-size: cover;
+}
+.card-2 .frente{
+    background-image: url(../imgs/faxadas/hotel_ritz.jpg);
+    background-size: cover;
+}
+.card-3 .frente{
+    background-image: url(../imgs/faxadas/the-plaza.jpeg);
+    background-size: cover;
+}
+.card-4 .frente{
+    background-image: url(../imgs/faxadas/le-meurice-paris.jpg);
+    background-size: cover;
+}
+
+
+footer {
+    margin-top: 3em;
+    color: transparent;
+    height: 50px;
+    width: 100%;
+    background-color: #3F0106;
 }

@@ -32,6 +32,7 @@ body{
 header{
     background-color: #3F0106;
     padding: 0.8em;
+    height: 90px;
 }
 nav{
     flex-grow: 1;
@@ -97,7 +98,7 @@ nav .menu-principal > ul li > a:hover{
     border-radius: 10px;
 }
 h1{
-    width: 40%;
+    width: 45%;
     margin-right: auto;
     margin-left: 0;
     text-align: left;
@@ -596,4 +597,11 @@ h3{
 }
 #msform fieldset.parte3 .action-button:hover{
     border: 3px solid #250101;
+}
+
+footer {
+    color: transparent;
+    height: 50px;
+    width: 100%;
+    background-color: #3F0106;
 }

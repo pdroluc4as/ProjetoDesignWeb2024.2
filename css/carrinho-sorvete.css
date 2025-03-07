@@ -24,6 +24,7 @@ div.opcao button{
     border: none;
     font-size: 1.1em;
     margin: 1em;
+    cursor: pointer;
 }
 .endereco{
     background-color: #320105;
@@ -88,7 +89,7 @@ form{
     width: 40%;
 }
 h1{
-    margin: 1em auto;
+    margin: 2em auto;
 }
 div.opcao{
     margin: 1em;
@@ -101,7 +102,7 @@ figure{
 }
 h1{
     padding: 0 44%;
-    padding-top: 500px;
+    padding-top: 550px;
 }
 p{
     text-align: center;

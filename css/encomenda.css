@@ -23,6 +23,7 @@ body{
 }
 
 /* CSS DA PARTE DO MENU*/
+/* CSS DA PARTE DO MENU*/
 *{
     padding: 0;
     margin: 0;
@@ -41,25 +42,27 @@ nav{
     text-decoration: none;
     margin: auto 0;
 } 
-.menu1{
+.menu-principal{
     display: flex;
     width: 50%;
     align-items: center;
     text-align: center;
 }
-.menu2{
+.menu-de-usuario li{
     display: flex;
     justify-content: flex-end;
     width: 40%;
+    align-items: center;
 }
-.menu-de-produtos{
+.menu-de-usuario > ul{
     display: flex;
+    align-items: center;
 }
-header .menu-de-produtos li{
+header .menu-principal > ul li{
     display: inline;
     margin: auto 0;
 }
-header .menu-de-icones li{
+header .menu-de-usuario li{
     list-style-type: none;
 }
 header a{
@@ -71,7 +74,7 @@ header a{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-header nav .menu-de-produtos li a{
+header nav .menu-principal > ul li a{
     padding: 0.5em 1em;
     margin: 0 auto;
     background-color: #3F0106;
@@ -86,7 +89,7 @@ nav h2{
     margin-bottom: 0;
     font-weight: 400;
 }
-nav .menu-de-produtos li > a:hover{
+nav .menu-principal > ul li > a:hover{
     margin: auto;
     background-color: #D9B992;
     border: 1px solid #D9B992;
@@ -106,7 +109,7 @@ h1{
 .fa-solid:hover{
     color: white;
 }
-.menu-de-icones{
+.menu-de-usuario{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -121,10 +124,10 @@ h1{
     border: 3px solid white;
     border-radius: 100%;
 }
-.menu-de-icones a{
+.menu-de-usuario a{
     vertical-align: middle;
 }
-.menu-de-icones li{
+.menu-de-usuario li{
     vertical-align: middle;
 }
 img{
@@ -142,19 +145,22 @@ body {
     background: #D9B992;
     margin: 8px;
     transition: 0.3s;
+    z-index: 2;
 }
 .menucelular{
     display: none;
     cursor: pointer;
+    z-index: 2;
 }
 .navlist{
     display: flex;
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza os itens do menu */
+    justify-content: center; 
     position: relative;
     width: 90%;
+    z-index: 3;
 }
 .navlist > li{
     display: inline-block;
@@ -168,11 +174,11 @@ body {
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 400%;
         background: #3F0106;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
@@ -180,14 +186,21 @@ body {
         margin-left: 0;
         opacity: 0;
     }
-    .menu-de-produtos{
+    .menu-principal{
+        margin-top: 90px;
+    }
+    .menu-de-usuario{
+        margin-top: 30px;
+    }
+    .menu-principal > li{
         width: 100%;
         flex-direction: column;
         gap: 15px;
     }
-    .menu-de-icones{
+    .menu-de-usuario li{
         width: 100%;
         justify-content: center;
+        gap: 0;
     }
     .menu1{
         margin-top:50px;
@@ -200,6 +213,9 @@ body {
     }
     .navlist.active{
         transform: translateX(0);
+    }
+    .mais-vendidos{
+        background-size: cover;
     }
 }
 @keyframes navLinkAparecer {

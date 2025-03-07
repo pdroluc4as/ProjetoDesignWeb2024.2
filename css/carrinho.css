@@ -126,6 +126,7 @@ div.opcao button{
     border: none;
     font-size: 1.1em;
     margin: 1em;
+    cursor: pointer;
 }
 .endereco{
     background-color: #320105;
@@ -168,6 +169,7 @@ form > button{
     border-radius: 18px;
     border: none;
     color: #D9B992;
+    cursor: pointer;
 }
 form > input{
     background-color: #320105;

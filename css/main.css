@@ -23,6 +23,7 @@ body{
     background-repeat: repeat;
 }
 
+/* CARROSSEL */
 .carousel-item img {
     width: 800px; 
     height: 400px; 
@@ -36,210 +37,216 @@ body{
     font-size: 4em;
     color: #D9B992;
 }
+/* CARROSSEL */
 
+/* CSS DA PARTE DO MENU E HEADER*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
 header{
+    background-color: #3F0106;
+    display: flex;
+    padding: 0.8em;
+    padding-bottom: 0;
+}
+nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D9B992;
+    text-decoration: none;
+    margin: auto 0;
+} 
+.menu1{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+.menu2{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+.menu-de-produtos{
     display: flex;
 }
+header .menu-de-produtos li{
+    display: inline;
+    margin: auto 0;
+}
+header .menu-de-icones li{
+    list-style-type: none;
+}
+header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #D9B992;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header nav .menu-de-produtos li a{
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    background-color: #3F0106;
+    border: 1px solid #3F0106;
+    color: #D9B992;
+    border-radius: 10px;
+}
+nav h2{
+    margin: 0 auto;
+    margin: 0 auto;
+    font-size: 2.8em;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+nav .menu-de-produtos li > a:hover{
+    margin: auto;
+    background-color: #D9B992;
+    border: 1px solid #D9B992;
+    color: #3F0106;
+    border-radius: 10px;
+}
+h1{
+    width: 40%;
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+}
+.fa-solid{
+    font-size: 4.5em;
+    margin: 0.5em;
+}
+.fa-solid:hover{
+    color: white;
+}
+.menu-de-icones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+.user{
+    border: 3px solid #3F0106;
+    border-radius: 100%;
+}
+.user:hover{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.menu-de-icones a{
+    vertical-align: middle;
+}
+.menu-de-icones li{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
+}
+
+/* RESPONSIVIDADE MENU */
+body {
+    text-align: center;
+    background-color: #f8e8c8;
+}
+.menucelular div{
+    width: 32px;
+    height: 2px;
+    background: #D9B992;
+    margin: 8px;
+    transition: 0.3s;
+}
+.menucelular{
+    display: none;
+    cursor: pointer;
+}
+.navlist{
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens do menu */
+    position: relative;
+    width: 90%;
+}
+.navlist > li{
+    display: inline-block;
+}
+@media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .navlist{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #3F0106;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .navlist li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menu-de-produtos{
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu-de-icones{
+        width: 100%;
+        justify-content: center;
+    }
+    .menu1{
+        margin-top:50px;
+    }
+    .menu2{
+        width:100%;
+    }
+    .menucelular{
+        display: block;
+    }
+    .navlist.active{
+        transform: translateX(0);
+    }
+}
+@keyframes navLinkAparecer {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.menucelular.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.menucelular.active .linha2{
+    opacity: 0;
+}
+.menucelular.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/* RESPONSIVIDADE MENU */
+/* CSS DA PARTE DO MENU E HEADER*/
+
+/* CSS DA PARTE DO SUBMENU COM OS DOCES */
 #categoria{
     display: flex;
 }
-
-
-
-/* CSS PARA A PARTE DOS MAIS VENDIDOS v */
-
-.mais-vendidos{
-    margin: 0 auto;
-    text-align: center;
-    /* Raica: aqui me fudeo, como q eu arrumo esse texto? */
-    background-image: url(../imgs/Backgrounds/background-MaisVendidos.png);
-    /* Raica: bem bugadinho graças a Deus */
-    padding-top: 5%;
-    padding-bottom: 20%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
-}
-
-.swiper-button-prev, .swiper-button-next{
-    color: #D9B992;
-}
-
-.cards-conteiner{
-    display: flex;
-    height: 27em;
-    width: 100%;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.mais-vendidos a{
-    padding-inline: 0;
-    padding-block: 0.3em;
-    border: 1px solid #3F0106;
-    color: #3F0106;
-}
-.mais-vendidos h2{
-    color: #D9B992;
-    padding: 2em;
-}
-
-
-/* ANIMAÇÃO FLIP */
-.flip-container {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 1em;
-    width: 277px;
-    height: 370px;
-    perspective: 1000px;
-}
-
-.flipper{
-	width: 100%;
-	height: 100%;
-    position: relative;
-    transition: transform 0.8s;
-	transform-style: preserve-3d;
-   
-}
-
-.flipper .tras{
-    transform: rotateY(180deg); 
-}
-
-.flip-container.active .flipper {
-    transform: rotateY(180deg); 
-}
-
-.frente, .tras{
-   backface-visibility: hidden;
-}
-
-.frente {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-    background-color: #3F0106;
-    border-radius: 20px;
-    border: solid 3px #D9B992;
-    color: #D9B992;
-}
-
-.tras{
-    position: absolute;
-	width: 100%;
-	height: 100%;
-    background-color: #3F0106;
-    border-radius: 20px;
-    border: solid 3px #3F0106;
-    color: #D9B992;
-}
-
-.flip-container .flipper .frente h3 {
-    margin-top: 70%;
-    font-size: 30px;
-}
-
-.flip-container .flipper .tras h3 {
-    margin-top: 55%;
-    font-size: 25px;
-    z-index: 1;
-}
-
-.flipper .frente .div-image img {
-    position: absolute;
-    left: 50%;
-    bottom: 60%;
-    width: 60%;
-    height: 45%;
-    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
-    mas o card nn, fora q a página principal tem q ser responsiva */
-    /* em resumo, ajeitar erra porra */
-    border-radius: 50%;
-    border: solid 3px #D9B992;
-    z-index: 0;
-}
-
-.flipper .tras .div-image {
-    position: absolute;
-    right: 50%;
-    bottom: 60%;
-    width: 60%;
-    height: 45%;
-    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
-    mas o card nn, fora q a página principal tem q ser responsiva */
-    /* em resumo, ajeitar erra porra */
-    border-radius: 50%;
-    border: solid 3px #3F0106;
-    background-color: #3F0106;
-}
-
-.flipper .tras .div-image img {
-    position: absolute;
-    right: 50%;
-    bottom: 60%;
-    width: 60%;
-    height: 45%;
-    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
-    mas o card nn, fora q a página principal tem q ser responsiva */
-    /* em resumo, ajeitar erra porra */
-    border-radius: 50%;
-    border: solid 3px #3F0106;
-    opacity: 0;
-    z-index: 0;
-}
-
-.flipper .frente a {
-    position: absolute;
-    left: 60%;
-    top: 80%;
-    text-decoration: none;
-    color: #3F0106;
-    background-color: #D9B992;
-    width: 45%;
-    height: 15%;
-    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
-    mas o card nn, fora q a página principal tem q ser responsiva */
-    /* em resumo, ajeitar erra porra */
-    border-radius: 10px;
-    margin-top: 10%;
-    font-size: 25px;
-}
-
-.flipper .tras a {
-    position: absolute;
-    right: 60%;
-    top: 80%;
-    text-decoration: none;
-    background-color: #3F0106;
-    width: 45%;
-    height: 15%;
-    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
-    mas o card nn, fora q a página principal tem q ser responsiva */
-    /* em resumo, ajeitar erra porra */
-    border-radius: 10px;
-    margin-top: 10%;
-    font-size: 0;
-    z-index: 0;
-    outline: none;
-    content: "";
-    overflow: hidden;
-}
-.flipper .tras p{
-    position: absolute;
-    z-index: 1;
-}
-
-/* CSS DA PARTE DO SUBMENU COM OS DOCES */
-
-
-/* CSS DA PARTE DO SUBMENU COM OS DOCES */
 #categoria{
     background-color: #3F0106;
     padding: 3em;
@@ -305,211 +312,194 @@ header{
     padding: 1em;
     text-align: center;
 }
-
-
-/* CSS DA PARTE DO MENU*/
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto";
-}
-header{
-    background-color: #3F0106;
-    padding: 0.8em;
-}
-nav{
+#categoria nav{
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #D9B992;
     text-decoration: none;
+    color: transparent;
     margin: auto 0;
 } 
-.menu-principal{
-    display: flex;
-    width: 50%;
-    align-items: center;
-    text-align: center;
-}
-.menu-de-usuario{
-    display: flex;
-    justify-content: flex-end;
-    width: 40%;
-}
-.menu-de-usuario > ul{
-    display: flex;
-}
-header .menu-principal > ul li{
-    display: inline;
-    margin: auto 0;
-}
-header .menu-de-icones li{
-    list-style-type: none;
-}
-header a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 0.6em;
-    color: #D9B992;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-header nav .menu-principal > ul li a{
-    padding: 0.5em 1em;
+/* CSS DA PARTE DO SUBMENU COM OS DOCES */
+
+/* CSS PARA A PARTE DOS MAIS VENDIDOS v */
+.mais-vendidos{
     margin: 0 auto;
-    background-color: #3F0106;
+    text-align: center;
+    /* Raica: aqui me fudeo, como q eu arrumo esse texto? */
+    background-image: url(../imgs/Backgrounds/background-MaisVendidos.png);
+    /* Raica: bem bugadinho graças a Deus */
+    padding-top: 5%;
+    padding-bottom: 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: #D9B992;
+}
+
+.cards-conteiner{
+    display: flex;
+    height: 27em;
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mais-vendidos a{
+    padding-inline: 0;
+    padding-block: 0.3em;
     border: 1px solid #3F0106;
-    color: #D9B992;
-    border-radius: 10px;
-}
-nav h2{
-    margin: 0 auto;
-    margin: 0 auto;
-    font-size: 2.8em;
-    margin-bottom: 0;
-    font-weight: 400;
-}
-nav .menu-principal > ul li > a:hover{
-    margin: auto;
-    background-color: #D9B992;
-    border: 1px solid #D9B992;
     color: #3F0106;
-    border-radius: 10px;
 }
-h1{
-    width: 40%;
-    margin-right: auto;
-    margin-left: 0;
-    text-align: left;
+.mais-vendidos h2{
+    color: #D9B992;
+    padding: 2em;
 }
-.fa-solid{
-    font-size: 4.5em;
-    margin: 0.5em;
-}
-.fa-solid:hover{
-    color: white;
-}
-.menu-de-icones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: auto;
-}
-.user{
-    border: 3px solid #3F0106;
-    border-radius: 100%;
-}
-.user:hover{
-    border: 3px solid white;
-    border-radius: 100%;
-}
-.menu-de-icones a{
-    vertical-align: middle;
-}
-.menu-de-icones li{
-    vertical-align: middle;
-}
-img{
-    vertical-align: middle;
-}
-
-/* responsividade menu */
-body {
-    text-align: center;
-    background-color: #f8e8c8;
-}
-.menucelular div{
-    width: 32px;
-    height: 2px;
-    background: #D9B992;
-    margin: 8px;
-    transition: 0.3s;
-}
-.menucelular{
-    display: none;
-    cursor: pointer;
-}
-.navlist{
-    display: flex;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+/* ANIMAÇÃO FLIP */
+.flip-container {
     position: relative;
-    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 277px;
+    height: 370px;
+    perspective: 1000px;
 }
-.navlist > li{
-    display: inline-block;
+.flipper{
+	width: 100%;
+	height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+   
 }
-@media (max-width: 1200px){
-    body{
-        overflow-x: hidden;
-    }
-    .navlist{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: #3F0106;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .navlist li{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .menu-principal > ul{
-        width: 100%;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .menu-de-icones{
-        width: 100%;
-        justify-content: center;
-    }
-    .menu1{
-        margin-top:50px;
-    }
-    .menu2{
-        width:100%;
-    }
-    .menucelular{
-        display: block;
-    }
-    .navlist.active{
-        transform: translateX(0);
-    }
+.flipper .tras{
+    transform: rotateY(180deg); 
 }
-@keyframes navLinkAparecer {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
+.flip-container.active .flipper {
+    transform: rotateY(180deg); 
 }
-.menucelular.active .linha1{
-    transform: rotate(-45deg) translate(-8px, 8px);
+.frente, .tras{
+   backface-visibility: hidden;
 }
-.menucelular.active .linha2{
+.frente {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    background-color: #3F0106;
+    border-radius: 20px;
+    border: solid 3px #D9B992;
+    color: #D9B992;
+}
+.tras{
+    position: absolute;
+	width: 100%;
+	height: 100%;
+    background-color: #3F0106;
+    border-radius: 20px;
+    border: solid 3px #3F0106;
+    color: #D9B992;
+}
+.flip-container .flipper .frente h3 {
+    margin-top: 70%;
+    font-size: 30px;
+}
+.flip-container .flipper .tras h3 {
+    margin-top: 55%;
+    font-size: 25px;
+    z-index: 1;
+}
+.flipper .frente .div-image img {
+    position: absolute;
+    left: 50%;
+    bottom: 60%;
+    width: 60%;
+    height: 45%;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
+    border-radius: 50%;
+    border: solid 3px #D9B992;
+    z-index: 0;
+}
+.flipper .tras .div-image {
+    position: absolute;
+    right: 50%;
+    bottom: 60%;
+    width: 60%;
+    height: 45%;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
+    border-radius: 50%;
+    border: solid 3px #3F0106;
+    background-color: #3F0106;
+}
+.flipper .tras .div-image img {
+    position: absolute;
+    right: 50%;
+    bottom: 60%;
+    width: 60%;
+    height: 45%;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
+    border-radius: 50%;
+    border: solid 3px #3F0106;
     opacity: 0;
+    z-index: 0;
 }
-.menucelular.active .linha3{
-    transform: rotate(45deg) translate(-5px, -7px);
+.flipper .frente a {
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    text-decoration: none;
+    color: #3F0106;
+    background-color: #D9B992;
+    width: 45%;
+    height: 15%;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
+    border-radius: 10px;
+    margin-top: 10%;
+    font-size: 25px;
 }
+.flipper .tras a {
+    position: absolute;
+    right: 60%;
+    top: 80%;
+    text-decoration: none;
+    background-color: #3F0106;
+    width: 45%;
+    height: 15%;
+    /* Raica: aqui tá dando ruim no back, qnd tu diminui a tela, ele tá ficando feio, pq ele diminui, 
+    mas o card nn, fora q a página principal tem q ser responsiva */
+    /* em resumo, ajeitar erra porra */
+    border-radius: 10px;
+    margin-top: 10%;
+    font-size: 0;
+    z-index: 0;
+    outline: none;
+    content: "";
+    overflow: hidden;
+}
+.flipper .tras p{
+    position: absolute;
+    z-index: 1;
+}
+/* CSS PARA A PARTE DOS MAIS VENDIDOS v */
 
-
+/* CSS FATIAS DE TORTA*/
 /* Girando cada fatia corretamente */
-
 .slice1 { 
     transform: rotate(0deg); 
 
@@ -624,5 +614,4 @@ body {
         transform: scale(0.5); /* Mantém tudo proporcional */
     }
 }
-
-/* parte das frutas */
+/* CSS FATIAS DE TORTA*/

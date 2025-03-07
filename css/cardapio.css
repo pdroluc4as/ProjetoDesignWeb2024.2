@@ -22,10 +22,6 @@ body{
     background-repeat: repeat;
 }
 
-header{
-    display: flex;
-}
-
 /* CSS DA PARTE DO MENU*/
 *{
     padding: 0;
@@ -34,6 +30,7 @@ header{
 }
 header{
     background-color: #3F0106;
+    display: flex;
     padding: 0.8em;
 }
 nav{
@@ -135,7 +132,7 @@ img{
     vertical-align: middle;
 }
 
-/* responsividade menu */
+/* RESPONSIVIDADE MENU */
 body {
     text-align: center;
     background-color: #f8e8c8;
@@ -225,6 +222,8 @@ body {
 .menucelular.active .linha3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+/* RESPONSIVIDADE MENU */
+/* CSS DA PARTE DO MENU*/
 
 /* MODELANDO OS CARDS */
 main .container{

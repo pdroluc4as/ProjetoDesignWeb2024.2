@@ -60,6 +60,7 @@ header{
 }
 
 .cards-conteiner{
+    height: 26em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -282,7 +283,9 @@ header{
     padding: 1em;
     text-align: center;
 }
-
+.swiper-button-prev, .swiper-button-next{
+    color: #D9B992;
+}
 
 /* CSS DA PARTE DO MENU*/
 *{

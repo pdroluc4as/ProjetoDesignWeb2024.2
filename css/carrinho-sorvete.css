@@ -67,6 +67,7 @@ form > button{
     border-radius: 18px;
     border: none;
     color: #D9B992;
+    cursor: pointer;
 }
 form > input{
     background-color: #320105;

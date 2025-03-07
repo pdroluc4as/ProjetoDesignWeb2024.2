@@ -1,6 +1,19 @@
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  .roboto{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
 *{
     padding: 0;
     margin: 0;
+    font-family: "Roboto";
 }
 
 body{
@@ -427,3 +440,7 @@ button img {
     transition: opacity 0.5s ease;
 }
 /* animação flip */
+
+h3{
+    font-family: "Playfair Display";
+}

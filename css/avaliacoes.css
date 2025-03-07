@@ -27,6 +27,7 @@ main{
     background-image: url(../imgs/Backgrounds/back-comentario.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: 5em;
 }
 
 /* CSS DA PARTE DO MENU*/
@@ -318,6 +319,7 @@ p{
     font-family: "Playfair-Display";
     font-style: italic;
     margin-bottom: 10px;
+    padding: 10px;
 }
 figure{
     display: block;

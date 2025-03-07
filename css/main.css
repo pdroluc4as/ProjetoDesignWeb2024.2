@@ -210,7 +210,12 @@ body{
     position: absolute;
     z-index: 1;
 }
-
+.swiper-wrapper{
+    padding:1.6em;
+}
+.flipper a{
+    vertical-align: middle;
+}
 
 /* CSS DA PARTE DO SUBMENU COM OS DOCES */
 #categoria{
@@ -617,6 +622,16 @@ body {
     }
 }
 
-
-
-
+@media (max-width: 668px) {
+    li{
+        font-size: 0.7em;
+    }
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #D9B992;
+}
+@media (max-width: 1600px) {
+    .mais-vendidos{
+        background-size: cover;
+    }
+}

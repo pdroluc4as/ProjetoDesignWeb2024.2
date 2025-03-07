@@ -490,3 +490,31 @@ h4{
     -webkit-text-stroke: 2px #D9B992; /* Mantém a borda para suavizar o efeito */
 }
 
+/* Parte da pesquisa */
+main > form{
+    background-color: #250101;
+    border-radius: 40px;
+    color: #D9B992;
+    font-size:8px;
+    width: 70%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding: 1em;
+}
+i{
+    vertical-align: middle;
+    font-size: 5px;
+}
+input{
+    background-color: #250101;
+    border: none;
+    width: 990px;
+    color: #D9B992;
+    vertical-align: middle;
+}
+input::placeholder{
+    color: #D9B992;
+    font-size: 1.3em;
+}

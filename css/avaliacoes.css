@@ -29,10 +29,6 @@ main{
     background-repeat: no-repeat;
 }
 
-header{
-    display: flex;
-}
-
 /* CSS DA PARTE DO MENU*/
 *{
     padding: 0;
@@ -41,6 +37,7 @@ header{
 }
 header{
     background-color: #3F0106;
+    display: flex;
     padding: 0.8em;
 }
 nav{
@@ -52,21 +49,21 @@ nav{
     text-decoration: none;
     margin: auto 0;
 } 
-.menu-principal{
+.menu1{
     display: flex;
     width: 50%;
     align-items: center;
     text-align: center;
 }
-.menu-de-usuario{
+.menu2{
     display: flex;
     justify-content: flex-end;
     width: 40%;
 }
-.menu-de-usuario > ul{
+.menu-de-produtos{
     display: flex;
 }
-header .menu-principal > ul li{
+header .menu-de-produtos li{
     display: inline;
     margin: auto 0;
 }
@@ -82,7 +79,7 @@ header a{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-header nav .menu-principal > ul li a{
+header nav .menu-de-produtos li a{
     padding: 0.5em 1em;
     margin: 0 auto;
     background-color: #3F0106;
@@ -97,7 +94,7 @@ nav h2{
     margin-bottom: 0;
     font-weight: 400;
 }
-nav .menu-principal > ul li > a:hover{
+nav .menu-de-produtos li > a:hover{
     margin: auto;
     background-color: #D9B992;
     border: 1px solid #D9B992;
@@ -142,7 +139,7 @@ img{
     vertical-align: middle;
 }
 
-/* responsividade menu */
+/* RESPONSIVIDADE MENU */
 body {
     text-align: center;
     background-color: #f8e8c8;
@@ -191,7 +188,7 @@ body {
         margin-left: 0;
         opacity: 0;
     }
-    .menu-principal > ul{
+    .menu-de-produtos{
         width: 100%;
         flex-direction: column;
         gap: 15px;

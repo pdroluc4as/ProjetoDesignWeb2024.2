@@ -1,251 +1,399 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/eb5472cd53.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
-    <title>Caramell L’amour & Cherry </title>
-</head>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/eb5472cd53.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Caramell L’amour & Cherry </title>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <h1><a href="index.html"><img src="../imgs/icones/logo.png" width="70" alt="Logo do site"></a></h1>
-            <div class="menucelular">
-                <div class="linha1"></div>
-                <div class="linha2"></div>
-                <div class="linha3"></div>
-            </div>
-            <ul class="navlist">
-                <li class="menu-principal">
-                    <ul>
-                        <li><a href="encomenda.html"><h2>Encomendas</h2></a></li>
-                        <li><a href="cardapio.html"><h2>Cardápio</h2></a></li>
-                        <li><a href="avaliacoes.html"><h2>Avaliações</h2></a></li>
-                    </ul>
-                </li>
-                <li class="menu-de-usuario">
-                    <ul>
-                        <li>
-                            <a href="localizacao.html">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </a>
-                        </li>
-                        <li class="imagem-user">
-                            <a href="login.html">
-                                <img class= "user" src="../imgs/icones/usuario.png" alt="imagem do usuário">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="carrinho1.html">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="carrossel">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+    <body>
+        <header>
+            <nav>
+                <h1><a href="index.html"><img src="../imgs/icones/logo.png" width="70" alt="Logo do site"></a></h1>
+                <div class="menucelular">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/banners/banner-de-brownie-de-morango.png" class="d-block w-100" alt="imagem de um brownie de chocolate">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Caramell L'amor & Cherry</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/banners/banner-de-doces-diversos.png" class="d-block w-100" alt="imagem de doces diversos">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Caramell L'amor & Cherry</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/banners/banner-de-cheesecake.png" class="d-block w-100" alt="imagem de um cheesecake de chocolate">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Caramell L'amor & Cherry</h2>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
-            </div>
-            <nav id="categoria">
-                <div>
-                    <a href="cardapio.html" class="imagem-categoria">
-                        <img src="imgs/icones/icone-tortas.png" alt="ícone de tortas">
-                    </a>
-                    <p><a href="cardapio.html">Tortas</a></p>
-                </div>
-                <div>
-                    <a href="cardapio.html" class="imagem-categoria">
-                        <img src="imgs/icones/icone-frutados.png" alt="ícone de Morangos">
-                    </a>
-                    <p><a href="cardapio.html">Frutados</a></p>
-                </div>
-                <div>
-                    <a href="cardapio.html" class="imagem-categoria">
-                        <img src="imgs/icones/icone-chocolate.png" alt="ícone de Chocolate">
-                    </a>
-                    <p><a href="cardapio.html">Chocolates</a></p>
-
-                </div>
-                <div>
-                    <a href="cardapio.html" class="imagem-categoria">
-                        <img src="imgs/icones/icone-gelatos.png" alt="ícone de sorvete ou gelatos">
-                    </a>
-                        <p><a href="cardapio.html">Gelatos</a></p>
-                </div>
+                <ul class="navlist">
+                    <li class="menu1">
+                        <ul class="menu-de-produtos">
+                            <li><a href="encomenda.html"><h2>Encomendas</h2></a></li>
+                            <li><a href="cardapio.html"><h2>Cardápio</h2></a></li>
+                            <li><a href="avaliacoes.html"><h2>Avaliações</h2></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2">
+                        <ul class="menu-de-icones">
+                            <li>
+                                <a href="localizacao.html">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </a>
+                            </li>
+                            <li class="imagem-user">
+                                <a href="login.html">
+                                    <img class= "user" src="../imgs/icones/usuario.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="carrinho1.html">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
-        </section>
-        <section class="mais-vendidos">
-            <h2>Mais Vendidos</h2>
-             <div class="cards-conteiner">
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/cheesecake.png" alt="Cheesecake Tradicional">
-                             </div>
-                             <h3>Cheesecake Tradicional</h3>
-                             <p>Uma mistura rica e aveludada que derrete na boca, feita de: biscoito, manteiga sem sal, cream cheese, açúcar, ovos e creme de leite</p>
-                             <p><a href="">R$400,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/cheesecake.png" alt="Cheesecake Tradicional">
-                             </div>
-                             <h3>Cheesecake Tradicional</h3>
-                             <p><a href="carrinho1.html">R$400,00</a></p>
-                         </div>
-                     </div>
-                 </div>
-     
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png" alt="trunfas de chocolate e framboesa">
-                             </div>
-                             <h3>Trufas de chocolate amargo e framboesa</h3>
-                             <p>Pequenas intensas e sedosas. Feitas de: chocolate 70%, creme de leite fresco, purê de framboesa, manteiga sem sal e cacau em pó.</p>
-                             <p><a>R$40,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png" alt="trunfas de chocolate e framboesa">
-                             </div>
-                             <h3>Trufas de chocolate amargo e framboesa</h3>
-                             <p><a href="carrinho1.html">R$40,00</a></p>
-                         </div>
-                     </div>
-                 </div>
-     
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png" alt="trunfa salgada de abacate com chocolate">
-                             </div>
-                             <h3>Trufas de Abacate com Chocolate </h3>
-                             <p>Uma fusão ousada e sedosa. Feita de: chocolate 70%, abacate maduro, manteiga sem sal, creme de leite fresco e uma pitada de flor de sal.</p>
-                             <p><a>R$25,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png" alt="trunfa salgada de abacate com chocolate">
-                             </div>
-                             <h3>Trufas de Abacate com Chocolate </h3>
-                             <p><a href="carrinho1.html">R$25,00</a></p>
-                         </div>
-                     </div>
-                 </div>
-     
-                 <div class="flip-container" onclick="this.classList.toggle('active')">
-                     <div class="flipper">
-                         <div class="tras">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png" alt="chessecake de menta e chocolate">
-                             </div>
-                             <h3>Cheesecake de Menta e Chocolate</h3>
-                             <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
-                             <p><a>R$410,00</a></p>
-                         </div>
-                         <div class="frente">
-                             <div class="div-image">
-                                 <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png " alt="Cheesecakede menta e chocolate">
-                             </div>
-                             <h3>Cheesecake de Menta e Chocolate</h3>
-                             <p><a href="carrinho1.html">R$410,00</a></p>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-        </section>
-        <div class="fruits">
-            <div class="container-fruits">
-                <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>
-                <div class="pizza-container">
-                    <div class="slice slice1"><img src="imgs/slices/slice1.png" alt="Fatia 1 - imagem de Morangos"></div>
-                    <div class="slice slice2"><img src="imgs/slices/slice2.png" alt="Fatia 2 - imagem de Acerolas"></div>
-                    <div class="slice slice3"><img src="imgs/slices/slice3.png" alt="Fatia 3 - imagem de MelanciaS"></div>
-                    <div class="slice slice4"><img src="imgs/slices/slice4.png" alt="Fatia 4 - imagem de Framboesas"></div>
-                    <div class="slice slice5"><img src="imgs/slices/slice5.png" alt="Fatia 5 - imagem de Maçãs"></div>
-                    <div class="slice slice6"><img src="imgs/slices/slice6.png" alt="Fatia 6 - imagem de Cerejas"></div>
-                    <div class="slice slice7"><img src="imgs/slices/slice7.png" alt="Fatia 7 - imagem de Romãs"></div>
-                    <div class="slice slice8"><img src="imgs/slices/slice8.png" alt="Fatia 8 - imagem de Groselha"></div>
-                </div>
-            </div>
-        </div>
-        <div class="fruits2">
-            <div class="container-fruits2">
-                <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>
-                <div class="pizza-container2">
-                    <div class="slice slice1"><img src="imgs/slices/slice9.png" alt="Fatia 1 - imagem de mangostão"></div>
-                    <div class="slice slice2"><img src="imgs/slices/slice10.png" alt="Fatia 2 - imagem de Açaí"></div>
-                    <div class="slice slice3"><img src="imgs/slices/slice11.png" alt="Fatia 3 - imagem de Framboesa"></div>
-                    <div class="slice slice4"><img src="imgs/slices/slice12.png" alt="Fatia 4 - imagem de Uvas"></div>
-                    <div class="slice slice5"><img src="imgs/slices/slice13.png" alt="Fatia 5 - imagem de Amora"></div>
-                    <div class="slice slice6"><img src="imgs/slices/slice14.png" alt="Fatia 6 - imagem de Mertilo"></div>
-                    <div class="slice slice7"><img src="imgs/slices/slice15.png" alt="Fatia 7 - imagem de Ameixa"></div>
-                    <div class="slice slice8"><img src="imgs/slices/slice16.png" alt="Fatia 8 - imagem de Jabuticaba"></div>
-                </div>
-            </div>
-        </div>
-    </main>
+        </header>
 
-</body>
+        <main>
+            <section class="carrossel">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/banners/banner-de-brownie-de-morango.png" class="d-block w-100" alt="imagem de um brownie de chocolate">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Caramell L'amor & Cherry</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/banners/banner-de-doces-diversos.png" class="d-block w-100" alt="imagem de doces diversos">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Caramell L'amor & Cherry</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/banners/banner-de-cheesecake.png" class="d-block w-100" alt="imagem de um cheesecake de chocolate">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Caramell L'amor & Cherry</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+
+
+                <!-- SUBMENU -->
+                <nav id="categoria">
+                    <div>
+                        <a href="cardapio.html" class="imagem-categoria">
+                            <img src="imgs/icones/icone-tortas.png" alt="ícone de tortas">
+                        </a>
+                        <p><a href="cardapio.html">Tortas</a></p>
+                    </div>
+                    <div>
+                        <a href="cardapio.html" class="imagem-categoria">
+                            <img src="imgs/icones/icone-frutados.png" alt="ícone de Morangos">
+                        </a>
+                        <p><a href="cardapio.html">Frutados</a></p>
+                    </div>
+                    <div>
+                        <a href="cardapio.html" class="imagem-categoria">
+                            <img src="imgs/icones/icone-chocolate.png" alt="ícone de Chocolate">
+                        </a>
+                        <p><a href="cardapio.html">Chocolates</a></p>
+
+                    </div>
+                    <div>
+                        <a href="cardapio.html" class="imagem-categoria">
+                            <img src="imgs/icones/icone-gelatos.png" alt="ícone de sorvete ou gelatos">
+                        </a>
+                            <p><a href="cardapio.html">Gelatos</a></p>
+                    </div>
+                </nav>
+                <!-- SUBMENU -->
+
+                
+            </section>
+            <section class="mais-vendidos">
+                <h2>Mais Vendidos</h2>
+                
+                <!-- CARDS -->
+                <div class="cards-conteiner swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper">
+                                    <div class="tras">
+                                        <h3>Cheesecake Tradicional</h3>
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/cheesecake.png">
+                                        </div>
+                                        <p>Uma mistura rica e aveludada que derrete na boca, feita de: biscoito, manteiga sem sal, cream cheese, açúcar, ovos e creme de leite</p>
+                                        <a><p>R$400,00</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <h3>Cheesecake Tradicional</h3>
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/cheesecake.png">
+                                        </div>
+                                        <a href="carrinho1.html"><p>R$400,00</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper">
+                                    <div class="tras">
+                                        <!-- Raica: tenho que arranjar um novo doce pra esse -->
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png">
+                                        </div>
+                                        <h3>Trufas de chocolate amargo e framboesa</h3>
+                                        <p>Pequenas intensas e sedosas. Feitas de: chocolate 70%, creme de leite fresco, purê de framboesa, manteiga sem sal e cacau em pó.</p>
+                                        <a><p>R$40,00</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/trunfas-de-chocolate-e-framboesa.png">
+                                        </div>
+                                        <h3>Trufas de chocolate amargo e framboesa</h3>
+                                        <a href="carrinho1.html"><p>R$40,00</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper">
+                                    <div class="tras">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png">
+                                        </div>
+                                        <h3>Trufas de Abacate com Chocolate </h3>
+                                        <p>Uma fusão ousada e sedosa. Feita de: chocolate 70%, abacate maduro, manteiga sem sal, creme de leite fresco e uma pitada de flor de sal.</p>
+                                        <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                        <a><p>R$25,00</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/trunfa-de-abacate-com-chocolate-salgada.png">
+                                        </div>
+                                        <h3>Trufas de Abacate com Chocolate </h3>
+                                        <a href="carrinho1.html"><p>R$25,00</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper ">
+                                    <div class="tras">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                        </div>
+                                        <h3>Cheesecake de Menta e Chocolate</h3>
+                                        <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                        <p>Uma sobremesa refrescante. Feita de: biscoito de chocolate, manteiga sem sal, cream cheese, açúcar, ovos, creme de leite e extrato natural de menta.</p>
+                                        <a><p>R$410,00 </p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                        </div>
+                                        <h3>Cheesecake de Menta e Chocolate</h3>
+                                        <a href="carrinho1.html"><p>R$410,00</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper ">
+                                    <div class="tras">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/chessecake-de-menta-e-chocolate.png">
+                                        </div>
+                                        <h3>Casquinha de Sorvete</h3>
+                                        <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                        <p>Sorvete de pistache com cobertura de chocolate</p>
+                                        <a><p>R$40,99 </p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/Casquinha-de-Sorvete.png">
+                                        </div>
+                                        <h3>Casquinha de Sorvete</h3>
+                                        <a href="carrinho1.html"><p>R$40,99</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper ">
+                                    <div class="tras">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/Cookies-de-Chocolate.png">
+                                        </div>
+                                        <h3>Cookies de Chocolate</h3>
+                                        <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                        <p>Cacau em pó, açucar de cana e flor de sal.</p>
+                                        <a><p>R$37,99</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/Cookies-de-Chocolate.png">
+                                        </div>
+                                        <h3>Cookies de Chocolate</h3>
+                                        <a href="carrinho1.html"><p>R$37,99</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper ">
+                                    <div class="tras">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/Bundts-de-Chocolate-Amargo.png">
+                                        </div>
+                                        <h3>Bundts de Chocolate Amargo</h3>
+                                        <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                        <p>são infundidos com delicadas notas de tangerina e alecrim.</p>
+                                        <a><p>R$68,99</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/Bundts-de-Chocolate-Amargo.png">
+                                        </div>
+                                        <h3>Bundts de Chocolate Amargo</h3>
+                                        <a href="carrinho1.html"><p>R$68,99</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flip-container" onclick="this.classList.toggle('active')">
+                                <div class="flipper ">
+                                    <div class="tras">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/Torta-Banoffee.png">
+                                        </div>
+                                        <h3>Torta Banoffee</h3>
+                                        <!-- Raica: e arranjar uma nova descrição pra o verso desses dois -->
+                                        <p>feita com massa sablée de amêndoas, recheio cremoso de caramelo e banana.</p>
+                                        <a><p>R$179,99</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                    <div class="frente">
+                                        <div class="div-image">
+                                            <img src="imgs/comidas/Torta-Banoffee.png">
+                                        </div>
+                                        <h3>Torta Banoffee</h3>
+                                        <a href="carrinho1.html"><p>R$179,99</p></a>
+                                        <!-- Raica: que gambiarra de âncora no preço é esse? Pode nn, tem q botar tag de texto, maluco -->
+                                        <!-- Raica: dnv, tô em dúvida se o âncora é fora ou dentro... -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- CARDS -->
+
+            </section>
+            <div class="fruits">
+                <div class="container-fruits">
+                    <div class="pizza-container">
+                        <div class="slice slice1"><img src="imgs/slices/slice1.png" alt="Fatia 1 - imagem de Morangos"></div>
+                        <div class="slice slice2"><img src="imgs/slices/slice2.png" alt="Fatia 2 - imagem de Acerolas"></div>
+                        <div class="slice slice3"><img src="imgs/slices/slice3.png" alt="Fatia 3 - imagem de MelanciaS"></div>
+                        <div class="slice slice4"><img src="imgs/slices/slice4.png" alt="Fatia 4 - imagem de Framboesas"></div>
+                        <div class="slice slice5"><img src="imgs/slices/slice5.png" alt="Fatia 5 - imagem de Maçãs"></div>
+                        <div class="slice slice6"><img src="imgs/slices/slice6.png" alt="Fatia 6 - imagem de Cerejas"></div>
+                        <div class="slice slice7"><img src="imgs/slices/slice7.png" alt="Fatia 7 - imagem de Romãs"></div>
+                        <div class="slice slice8"><img src="imgs/slices/slice8.png" alt="Fatia 8 - imagem de Groselha"></div>
+                    </div>
+                    <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>
+                </div>
+            </div>
+            <div class="fruits2">
+                <div class="container-fruits2">
+                    <div class="pizza-container2">
+                        <div class="slice slice1"><img src="imgs/slices/slice9.png" alt="Fatia 1 - imagem de mangostão"></div>
+                        <div class="slice slice2"><img src="imgs/slices/slice10.png" alt="Fatia 2 - imagem de Açaí"></div>
+                        <div class="slice slice3"><img src="imgs/slices/slice11.png" alt="Fatia 3 - imagem de Framboesa"></div>
+                        <div class="slice slice4"><img src="imgs/slices/slice12.png" alt="Fatia 4 - imagem de Uvas"></div>
+                        <div class="slice slice5"><img src="imgs/slices/slice13.png" alt="Fatia 5 - imagem de Amora"></div>
+                        <div class="slice slice6"><img src="imgs/slices/slice14.png" alt="Fatia 6 - imagem de Mertilo"></div>
+                        <div class="slice slice7"><img src="imgs/slices/slice15.png" alt="Fatia 7 - imagem de Ameixa"></div>
+                        <div class="slice slice8"><img src="imgs/slices/slice16.png" alt="Fatia 8 - imagem de Jabuticaba"></div>
+                    </div>
+                    <p>As frutas vermelhas são um verdadeiro encanto para os amantes de doces! Morangos, framboesas, amoras, cerejas e mirtilos não só adicionam cor e beleza às sobremesas, mas também trazem um sabor levemente ácido que equilibra perfeitamente o dulçor das receitas. Elas são ideais para tortas, mousses, geleias e coberturas, além de combinarem incrivelmente bem com chocolate e chantilly. Além disso, são ricas em antioxidantes e vitaminas, deixando seus doces não apenas deliciosos, mas também nutritivos.</p>               
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

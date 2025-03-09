@@ -41,3 +41,28 @@ const menuCelular = new NavBarLateral(
 );
 menuCelular.init();
 // console.log(menuCelular);
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 15, // Espaço entre os slides
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    breakpoints: {
+        320: { slidesPerView: 1 }, // 1 card por vez em telas pequenas
+        768: { slidesPerView: 2 }, // 2 cards em tablets
+        1024: { slidesPerView: 2 }, // 2 cards em desktops
+        1250: { slidesPerView: 3 }, // 3 cards em desktops
+        1700: { slidesPerView: 4 }, // 4 cards em desktops
+        1920: { slidesPerView: 4 }, // 4 cards em tela cheia
+    }
+  });
+  

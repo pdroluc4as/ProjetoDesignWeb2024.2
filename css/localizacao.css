@@ -1,6 +1,19 @@
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  .roboto{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
 *{
     padding: 0;
     margin: 0;
+    font-family: "Roboto";
 }
 
 body{
@@ -13,40 +26,50 @@ header{
     display: flex;
 }
 
-/* CSS DA PARTE DO MENU*/
+/* CSS DA PARTE DO MENU */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
 header{
     background-color: #3F0106;
     display: flex;
-    justify-content:space-between;
-    align-items: baseline;
-    align-content: center;
+    align-items: center;
     padding: 0.8em;
-}
-.menu-de-icones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu-de-icones ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: 90px;
 }
 nav{
-    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #D9B992;
     text-decoration: none;
     margin: auto 0;
 } 
-header ul{
-    padding: 0; 
-    text-align: left;
-    margin: 0 auto;
+.menu-principal{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    text-align: center;
 }
-header li{
+.menu-de-usuario li{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    align-items: center;
+}
+.menu-de-usuario > ul{
+    display: flex;
+    align-items: center;
+}
+header .menu-principal > ul li{
     display: inline;
     margin: auto 0;
+}
+header .menu-de-usuario li{
+    list-style-type: none;
 }
 header a{
     display: inline-block;
@@ -57,7 +80,7 @@ header a{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-header nav li a{
+header nav .menu-principal > ul li a{
     padding: 0.5em 1em;
     margin: 0 auto;
     background-color: #3F0106;
@@ -70,8 +93,9 @@ nav h2{
     margin: 0 auto;
     font-size: 2.8em;
     margin-bottom: 0;
+    font-weight: 400;
 }
-nav li > a:hover{
+nav .menu-principal > ul li > a:hover{
     margin: auto;
     background-color: #D9B992;
     border: 1px solid #D9B992;
@@ -79,7 +103,10 @@ nav li > a:hover{
     border-radius: 10px;
 }
 h1{
-    width: 167.792px;
+    width: 45%;
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
 }
 .fa-solid{
     font-size: 4.5em;
@@ -88,10 +115,12 @@ h1{
 .fa-solid:hover{
     color: white;
 }
-.menu-de-icones{
+.menu-de-usuario{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
 }
 .user{
     border: 3px solid #3F0106;
@@ -101,15 +130,120 @@ h1{
     border: 3px solid white;
     border-radius: 100%;
 }
-.menu-de-icones a{
+.menu-de-usuario a{
     vertical-align: middle;
 }
-.menu-de-icones li{
+.menu-de-usuario li{
     vertical-align: middle;
 }
 img{
     vertical-align: middle;
 }
+
+/* responsividade menu */
+body {
+    text-align: center;
+    background-color: #f8e8c8;
+}
+.menucelular div{
+    width: 32px;
+    height: 2px;
+    background: #D9B992;
+    margin: 8px;
+    transition: 0.3s;
+    z-index: 2;
+}
+.menucelular{
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.navlist{
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    width: 90%;
+    z-index: 3;
+}
+.navlist > li{
+    display: inline-block;
+}
+@media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .navlist{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 400%;
+        background: #3F0106;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .navlist li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menu-principal{
+        margin-top: 90px;
+    }
+    .menu-de-usuario{
+        margin-top: 30px;
+    }
+    .menu-principal > li{
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu-de-usuario li{
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+    }
+    .menu1{
+        margin-top:50px;
+    }
+    .menu2{
+        width:100%;
+    }
+    .menucelular{
+        display: block;
+    }
+    .navlist.active{
+        transform: translateX(0);
+    }
+    .mais-vendidos{
+        background-size: cover;
+    }
+}
+@keyframes navLinkAparecer {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.menucelular.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.menucelular.active .linha2{
+    opacity: 0;
+}
+.menucelular.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/* CSS DA PARTE DO MENU */
 
 
 /* animação flip */
@@ -158,8 +292,14 @@ main {
 }
 
 .flip-container .flipper .frente h3 {
-    margin-top: 70%;
+    margin-top: 90%;
     font-size: 30px;
+    background-color: #3F0106;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .flip-container .flipper .tras h3 {
@@ -269,7 +409,7 @@ main {
 
 .flip-button {
     margin-top: 6%;
-    margin-left: 37%;
+    margin-left: -10%;
     /*padding: 8px 16px;
     font-size: 16px;
     background-color: #D9B992;
@@ -307,3 +447,32 @@ button img {
     transition: opacity 0.5s ease;
 }
 /* animação flip */
+
+h3{
+    font-family: "Playfair Display";
+}
+.card-1 .frente{
+    background-image: url(../imgs/faxadas/jumeirah.jpg);
+    background-size: cover;
+}
+.card-2 .frente{
+    background-image: url(../imgs/faxadas/hotel_ritz.jpg);
+    background-size: cover;
+}
+.card-3 .frente{
+    background-image: url(../imgs/faxadas/the-plaza.jpeg);
+    background-size: cover;
+}
+.card-4 .frente{
+    background-image: url(../imgs/faxadas/le-meurice-paris.jpg);
+    background-size: cover;
+}
+
+
+footer {
+    margin-top: 3em;
+    color: transparent;
+    height: 50px;
+    width: 100%;
+    background-color: #3F0106;
+}

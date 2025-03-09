@@ -37,9 +37,6 @@ body{
     color: #D9B992;
 }
 
-header{
-    display: flex;
-}
 #categoria{
     display: flex;
 }
@@ -59,6 +56,7 @@ header{
 }
 
 .cards-conteiner{
+    height: 30em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -139,8 +137,7 @@ header{
 
 .flip-container .flipper .tras h3 {
     margin-top: 50%;
-    font-size: 30px;
-    z-index: 1;
+    font-size: 25px;
 }
 
 .flipper .frente .div-image img {
@@ -190,9 +187,10 @@ header{
     border-radius: 10px;
     margin-top: 10%;
     font-size: 25px;
+    padding-top: 10px;
 }
 
-.flipper .tras a {
+.flipper .tras .preco {
     position: absolute;
     right: 60%;
     top: 80%;
@@ -205,15 +203,17 @@ header{
     font-size: 0;
     z-index: 0;
     outline: none;
-    content: "";
     overflow: hidden;
 }
 .flipper .tras p{
     position: absolute;
-    z-index: 1;
 }
-
-
+.swiper-wrapper{
+    padding:1.6em;
+}
+.flipper a{
+    vertical-align: middle;
+}
 
 /* CSS DA PARTE DO SUBMENU COM OS DOCES */
 #categoria{
@@ -226,6 +226,7 @@ header{
     align-items: center;
     align-content: stretch;
     justify-content: center;
+    flex-wrap: wrap;
 } 
 #categoria div{
     display: inline-block;
@@ -281,9 +282,11 @@ header{
     padding: 1em;
     text-align: center;
 }
+.swiper-button-prev, .swiper-button-next{
+    color: #D9B992;
+}
 
-
-/* CSS DA PARTE DO MENU*/
+/* CSS DA PARTE DO MENU */
 *{
     padding: 0;
     margin: 0;
@@ -291,7 +294,10 @@ header{
 }
 header{
     background-color: #3F0106;
+    display: flex;
+    align-items: center;
     padding: 0.8em;
+    height: 115px;
 }
 nav{
     flex-grow: 1;
@@ -308,19 +314,21 @@ nav{
     align-items: center;
     text-align: center;
 }
-.menu-de-usuario{
+.menu-de-usuario li{
     display: flex;
     justify-content: flex-end;
     width: 40%;
+    align-items: center;
 }
 .menu-de-usuario > ul{
     display: flex;
+    align-items: center;
 }
 header .menu-principal > ul li{
     display: inline;
     margin: auto 0;
 }
-header .menu-de-icones li{
+header .menu-de-usuario li{
     list-style-type: none;
 }
 header a{
@@ -367,7 +375,7 @@ h1{
 .fa-solid:hover{
     color: white;
 }
-.menu-de-icones{
+.menu-de-usuario{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -382,10 +390,10 @@ h1{
     border: 3px solid white;
     border-radius: 100%;
 }
-.menu-de-icones a{
+.menu-de-usuario a{
     vertical-align: middle;
 }
-.menu-de-icones li{
+.menu-de-usuario li{
     vertical-align: middle;
 }
 img{
@@ -403,10 +411,12 @@ body {
     background: #D9B992;
     margin: 8px;
     transition: 0.3s;
+    z-index: 2;
 }
 .menucelular{
     display: none;
     cursor: pointer;
+    z-index: 2;
 }
 .navlist{
     display: flex;
@@ -416,6 +426,7 @@ body {
     justify-content: center; 
     position: relative;
     width: 90%;
+    z-index: 3;
 }
 .navlist > li{
     display: inline-block;
@@ -429,11 +440,11 @@ body {
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 400%;
         background: #3F0106;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
@@ -441,14 +452,21 @@ body {
         margin-left: 0;
         opacity: 0;
     }
-    .menu-principal > ul{
+    .menu-principal{
+        margin-top: 90px;
+    }
+    .menu-de-usuario{
+        margin-top: 30px;
+    }
+    .menu-principal > li{
         width: 100%;
         flex-direction: column;
         gap: 15px;
     }
-    .menu-de-icones{
+    .menu-de-usuario li{
         width: 100%;
         justify-content: center;
+        gap: 0;
     }
     .menu1{
         margin-top:50px;
@@ -461,6 +479,9 @@ body {
     }
     .navlist.active{
         transform: translateX(0);
+    }
+    .mais-vendidos{
+        background-size: cover;
     }
 }
 @keyframes navLinkAparecer {
@@ -482,10 +503,10 @@ body {
 .menucelular.active .linha3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+/* CSS DA PARTE DO MENU */
 
-
+/* CSS FATIAS DE TORTA*/
 /* Girando cada fatia corretamente */
-
 .slice1 { 
     transform: rotate(0deg); 
 
@@ -521,40 +542,26 @@ body {
     transform: rotate(-45deg); 
 }
 
-.pizza-container {
-    position: absolute;
-    top: 0%;
-    left: 35%;
-    transform: scale(0.8);
-}
-
 .fruits {
     width: 100%;
     height: 100%;
-    margin-top: 10%;
 }
+
 .slice img {
     border: 3px solid black;
     border-radius: 50%;
 }
 
 .pizza-container {
-    position: absolute;
-    top: -40%;
-    left: 37%;
     width: 425px;
     height: 425px;
     transform: scale(0.8);
 }
 
-.fruits {
-    width: 100%;
-    height: 100%;
-    margin-top: 10%;
-    /*padding-left: 20%;*/
-}
 .container-fruits {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -567,7 +574,6 @@ body {
 .container-fruits p {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 15%;
     margin-bottom: 10%;
     font-family: "Playfair-Display";
     z-index: 1;
@@ -578,17 +584,19 @@ body {
     width: 100%;
     height: 100%;
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .pizza-container2 {
-    position: absolute;
-    top: 0%;
-    left: 35%;
     transform: scale(0.8);
+    width: 425px;
+    height: 425px;
     
 }
 .container-fruits2 {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -601,14 +609,36 @@ body {
 .container-fruits2 p {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 15%;
     margin-bottom: 10%;
     font-family: "Playfair-Display";
 }
-/* parte das frutas */
 
+@media (max-width: 668px) {
+    .pizza-container {
+        transform: scale(0.5); /* Mantém tudo proporcional */
+    }
+    .pizza-container2 {
+        transform: scale(0.5); /* Mantém tudo proporcional */
+    }
+}
 
+@media (max-width: 668px) {
+    li{
+        font-size: 0.7em;
+    }
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #D9B992;
+}
+@media (max-width: 1600px) {
+    .mais-vendidos{
+        background-size: cover;
+    }
+}
 
-
-
-
+footer {
+    color: transparent;
+    height: 50px;
+    width: 100%;
+    background-color: #3F0106;
+}

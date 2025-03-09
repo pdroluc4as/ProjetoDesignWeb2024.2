@@ -105,6 +105,7 @@ h1{
 .fa-solid{
     font-size: 4.5em;
     margin: 0.5em;
+    cursor: pointer;
 }
 .fa-solid:hover{
     color: white;
@@ -511,8 +512,10 @@ i{
 input{
     background-color: #250101;
     border: none;
-    width: 990px;
+    width: 1170px;
+    height: 45px;
     color: #D9B992;
+    font-size: 20px;
     vertical-align: middle;
 }
 input::placeholder{

@@ -521,7 +521,7 @@ h3{
     color: white;
     text-transform: uppercase;
     font-size: 20px;
-    width: 30%;
+    width: 31%;
     float: left;
     position: relative;
     display: inline-block;
@@ -598,10 +598,32 @@ h3{
 #msform fieldset.parte3 .action-button:hover{
     border: 3px solid #250101;
 }
-
-footer {
-    color: transparent;
-    height: 50px;
+#progressbar li.active {
+    position: relative;
+}
+#progressbar li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 10px;
+    background: #250101; /* Cor inicial da linha */
+    transform: translateY(-50%);
+    transition: width 0.8s ease-in-out;
+}
+#progressbar li.active::after {
     width: 100%;
-    background-color: #3F0106;
+    background: #82451F; /* Cor preenchida */
+}
+#progressbar li.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120%;
+    height: 10px;
+    background: #82451F; /* Cor da barra preenchida */
+    transform: translate(-50%, -50%);
+    transition: width 0.8s ease-in-out; /* Animação suave */
 }

@@ -436,11 +436,12 @@ body {
         overflow-x: hidden;
     }
     .navlist{
+        margin-top: 1em;
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 50vw;
-        height: 400%;
+        width: 100vw;
+        height: 100vh;
         background: #3F0106;
         flex-direction: column;
         align-items: center;
@@ -450,6 +451,7 @@ body {
     }
     .navlist li{
         margin-left: 0;
+        margin-right: 0;
         opacity: 0;
     }
     .menu-principal{
@@ -478,6 +480,7 @@ body {
         display: block;
     }
     .navlist.active{
+        display: flex;
         transform: translateX(0);
     }
     .mais-vendidos{
@@ -502,6 +505,12 @@ body {
 }
 .menucelular.active .linha3{
     transform: rotate(45deg) translate(-5px, -7px);
+}
+.menu-principal ul {
+    padding-left: 0;
+}
+.menu-de-usuario ul {
+    padding-left: 0;
 }
 /* CSS DA PARTE DO MENU */
 
@@ -624,7 +633,7 @@ body {
 
 @media (max-width: 668px) {
     li{
-        font-size: 0.7em;
+        font-size: 1.0em;
     }
 }
 .swiper-button-next, .swiper-button-prev {

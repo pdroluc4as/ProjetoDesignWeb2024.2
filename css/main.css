@@ -512,6 +512,9 @@ body {
 .menu-de-usuario ul {
     padding-left: 0;
 }
+.navlist:not(.active) {
+    display: none;
+}
 /* CSS DA PARTE DO MENU */
 
 /* CSS FATIAS DE TORTA*/

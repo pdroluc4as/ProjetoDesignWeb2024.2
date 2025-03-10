@@ -435,6 +435,9 @@ body {
     body{
         overflow-x: hidden;
     }
+    .navlist:not(.active) {
+        display: none;
+    }
     .navlist{
         margin-top: 1em;
         position: absolute;
@@ -511,9 +514,6 @@ body {
 }
 .menu-de-usuario ul {
     padding-left: 0;
-}
-.navlist:not(.active) {
-    display: none;
 }
 /* CSS DA PARTE DO MENU */
 

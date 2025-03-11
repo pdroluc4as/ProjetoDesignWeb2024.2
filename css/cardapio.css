@@ -500,7 +500,7 @@ main > form{
     font-size:8px;
     width: 70%;
     vertical-align: middle;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
     margin-top: 4em;
     padding: 1em;
@@ -512,7 +512,7 @@ i{
 input{
     background-color: #250101;
     border: none;
-    width: 1170px;
+    width: 1030px;
     height: 45px;
     color: #D9B992;
     font-size: 20px;
